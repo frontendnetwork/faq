@@ -11,7 +11,25 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 The "faq" page with questions answered, that weren't asked frequently, was created in January 2014, when [@philipbrembeck](https://github.com/philipbrembeck) was in need of creating a new HTML MetaExtension, which would not be marked as an error in the W3 Validator.
 
 ## Contribute
-If you want to contribute, just create a new docs under `source` with `<title of your page>.md`. Don't forget to add it to the `index.md` too! 
+If you want to contribute, fork the Git-Repro (jokenetwork/faq) and create a new document under `source/` with `<title of your page>.md`. Don't forget to add it to the `index.md` too! 
+You can also change existing doc-pages.
+
+	index.php
+	Parsedown.php/
+	README.md
+	├── source/
+	│   ├── apple-mobile-web-app-title.md
+	│   ├── bitcoin.md
+	│   ├── Blazerr.md
+	│   ├── index.md
+	│   ├── license:uri.md
+	│   ├── license.md
+	│   ├── README.md
+	│   └── start.md
+	└── css
+
+**Please note that file-names are case-sensitive!** 
+
 Then just open a pull request and we'll review your page and add it. 
 
 ## Credits 
