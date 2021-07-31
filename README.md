@@ -10,11 +10,17 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 
 The "faq" page with questions answered, that weren't asked frequently, was created in January 2014, when [@philipbrembeck](https://github.com/philipbrembeck) was in need of creating a new HTML MetaExtension, which would also not be marked up as an error in the W3 Validator.
 
+## Contribute
+If you want to contribute, just create a new docs under `source` with `<title of your page>.md`. Don't forget to add it to the `index.md` too! 
+Then just open a pull request and we'll review your page and add it. 
+
 ## Credits 
 
-This repo is based on:
+This repo uses:
 
  - [Bootstrap v3.0.3](https://getbootstrap.com)
+ - [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
+ - [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
 
 ## License
 

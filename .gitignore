@@ -1,2 +1,7 @@
-
 .DS_Store
+.rejected/
+.rejected
+.htaccess
+css
+css/
+Parsedown.php
