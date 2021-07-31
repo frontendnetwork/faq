@@ -1,11 +1,8 @@
-This is an overview over all meta tags used by [Blazerr by JokeNetwork](https://jokenetwork.de).
+This is an overview over all meta tags used by [Blazerr by JokeNetwork <i class="fas fa-external-link-alt"></i>](https://jokenetwork.de).
 
 ## blazerr-support-identifier
 Is used to identify users along with a cookie, which you get from the libary `blazerr-lib.php` (available at the member-center). 
 Please see "blazerr-support-id-noncookies" for a GDPR conform version.
-
-
-The bitcoin meta tag is used to show up the bitcoin-adress of a webiste-owner. More information: [Bitcoin Talk Formus <i class="fas fa-external-link-alt"></i>](https://bitcointalk.org/index.php?topic=140257.0), [r/bitcoin <i class="fab fa-reddit"></i>](http://www.reddit.com/r/Bitcoin/comments/1de96y/bitcoin_in_html_meta_tag_for_discovery/)
 
 ### Usage: 
 
