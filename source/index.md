@@ -9,7 +9,7 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 	- [Bitcoin](bitcoin)
 - license Meta Tags
 	- [license](license)
-	- [license-uri](/license:uri)
+	- [license:uri](/license:uri)
 
 ### JokeNetwork Services (Deprecated)
 - Blazerr SEO Optimization
