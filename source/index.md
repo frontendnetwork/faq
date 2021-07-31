@@ -11,3 +11,6 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 ### JokeNetwork Services (Deprecated)
 - Blazerr SEO Optimization
 	- [Blazerr](Blazerr)
+
+- iOS App: Start! 
+	- [Start! Verification](start)
