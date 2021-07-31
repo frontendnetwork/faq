@@ -7,3 +7,7 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 	- [apple-mobile-web-app-title](apple-mobile-web-app-title)
 - Bitcoin Meta Tags
 	- [Bitcoin](bitcoin)
+
+### JokeNetwork Services (Deprecated)
+- Blazerr SEO Optimization
+	- [Blazerr](Blazerr)
