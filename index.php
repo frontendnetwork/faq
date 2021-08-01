@@ -26,15 +26,19 @@ if (file_exists('source/'.$CurPageURL.'.md')) {
       <h1><a href="/">Docs</a> » '.$file.'</h1>
       <p><a href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a></p>
     </div>
+    <div class="content">
     '.$Parsedown->text($content).'
+    </div>
   <hr>  
+  <div class="footer">
   <p class="pull-right">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
     <p>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a> ›</span>
 
    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$file.'" itemprop="url"><span itemprop="title">'.$file.'</span></a></span>
-  </p>
+    </p>
     </div>
+  </div>
     <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>
   </body>
   </html>';
@@ -65,12 +69,16 @@ elseif (empty($CurPageURL)) {
       <h1>Docs</h1>
       <p><a href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a></p>
     </div>
+    <div class="content">
     '.$Parsedown->text($content).'
+    </div>
   <hr> 
+  <div class="footer">
   <p class="pull-right">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
     <p>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$file.'" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a></span>
-  </p>
+    </p>
+    </div>
     </div>
     <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>
   </body>
@@ -99,17 +107,20 @@ else {
           <h1><a href="/">Docs</a> » Error Code '.$_GET['code'].'</h1>
           <p class="lead">Server returned error code '.$_GET['code'].' for '.$CurPageURL.'</p>
         </div>
+        <div class="content">
         <h3>'.$CurPageURL.': '.$error.'</h3>
         Go to <a href="https://faq.jokenetwork.de/index">index</a> for an overview.
+        </div>
         <hr>
-
+  <div class="footer">
   <p class="pull-right">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
 
     <p>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a> ›</span>
 
    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/<?php echo $file ?>" itemprop="url"><span itemprop="title">'.$CurPageURL.'</span></a></span>
-  </p>
+    </p>
+   </div>
    </div>
 
      <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>

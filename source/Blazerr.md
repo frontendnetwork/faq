@@ -1,4 +1,4 @@
-This is an overview over all meta tags used by [Blazerr by JokeNetwork <i class="fas fa-external-link-alt"></i>](https://jokenetwork.de).
+This is an overview over all meta tags used by [Blazerr by JokeNetwork](https://jokenetwork.de).
 
 ## blazerr-support-identifier
 Is used to identify users along with a cookie, which you get from the libary `blazerr-lib.php` (available at the member-center). 
