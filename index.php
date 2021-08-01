@@ -3,6 +3,7 @@ $CurPageURL = $_SERVER['REQUEST_URI'];
 $CurPageURL = ltrim($CurPageURL, '/');
 
 if (file_exists('source/'.$CurPageURL.'.md')) {
+  header("HTTP/1.1 200 OK");
   include 'Parsedown.php';
   $file = basename($CurPageURL);
   $content = file_get_contents('source/'.$file.'.md');
@@ -22,7 +23,7 @@ if (file_exists('source/'.$CurPageURL.'.md')) {
   <body>
   <div class="container">
     <div class="page-header">
-      <h1><a href="/">Docs</a> » <a href="'.$file.'">'.$file.'</a></h1>
+      <h1><a href="/">Docs</a> » '.$file.'</h1>
       <p><a href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a></p>
     </div>
     '.$Parsedown->text($content).'
@@ -41,6 +42,7 @@ if (file_exists('source/'.$CurPageURL.'.md')) {
 } 
 
 elseif (empty($CurPageURL)) {
+  header("HTTP/1.1 200 OK");
   include 'Parsedown.php';
   $file = basename(index);
   $content = file_get_contents('source/'.$file.'.md');
@@ -60,7 +62,7 @@ elseif (empty($CurPageURL)) {
   <body>
   <div class="container">
     <div class="page-header">
-      <h1><a href="/">Docs</a></h1>
+      <h1>Docs</h1>
       <p><a href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a></p>
     </div>
     '.$Parsedown->text($content).'
@@ -94,7 +96,7 @@ else {
       <div class="container">
 
         <div class="page-header">
-          <h1><a href="/">Docs</a> » <a href="'.$file.'">Error Code '.$_GET['code'].'</a></h1>
+          <h1><a href="/">Docs</a> » Error Code '.$_GET['code'].'</h1>
           <p class="lead">Server returned error code '.$_GET['code'].' for '.$CurPageURL.'</p>
         </div>
         <h3>'.$CurPageURL.': '.$error.'</h3>

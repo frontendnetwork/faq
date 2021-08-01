@@ -1,6 +1,9 @@
 ## Index
 
-In our documentation anyone can find public docs ~~for our (deprecated) services (which aren't important for that matter) and also~~ **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG](https://wiki.whatwg.org/wiki/MetaExtensions)).
+In our documentation anyone can find public docs ~~for our (deprecated) services (which aren't important for that matter) and also~~ **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG <i class="fas fa-external-link-alt"></i>](https://wiki.whatwg.org/wiki/MetaExtensions)).
+
+### General information
+- [README](README)
 
 ### 3rd party services
 - Apple Metag Tags
