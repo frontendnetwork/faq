@@ -1,7 +1,7 @@
 ## Meta Tag license
 Is used to to define the license under which a website is published.
 
-### Usage: 
+## Usage: 
 
 	<meta name="license" content="C-BY-NC-SA-4.0">
 
@@ -17,5 +17,5 @@ Is used to to define the license under which a website is published.
 
 Other license types are possible too, but it is recommended to link to the license via [`license:uri`](/license:uri).
 
-### W3
+## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator
