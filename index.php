@@ -2,11 +2,11 @@
 $CurPageURL = $_SERVER['REQUEST_URI'];  
 $CurPageURL = ltrim($CurPageURL, '/');
 
-if (file_exists('source/'.$CurPageURL.'.md')) {
+if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
   header("HTTP/1.1 200 OK");
   include 'Parsedown.php';
   $file = basename($CurPageURL);
-  $content = file_get_contents('source/'.$file.'.md');
+  $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
   $Parsedown = new Parsedown();
 
   echo '<!DOCTYPE html>
@@ -49,7 +49,7 @@ elseif (empty($CurPageURL)) {
   header("HTTP/1.1 200 OK");
   include 'Parsedown.php';
   $file = basename(index);
-  $content = file_get_contents('source/'.$file.'.md');
+  $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
   $Parsedown = new Parsedown();
 
   echo '<!DOCTYPE html>
@@ -71,7 +71,23 @@ elseif (empty($CurPageURL)) {
             <p><a href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a></p>
         </header>
         <main class="content">
-            '.$Parsedown->text($content).'
+            '.$Parsedown->text($content);
+
+            function mkmap($dir){
+    echo "<ul>";   
+    $folder = opendir ($dir);
+
+    while ($file = readdir ($folder)) {   
+        if ($file != "." && $file != "..") {           
+            $pathfile = substr($file, 0, -3);           
+            echo "<li><a href='/$pathfile'>$pathfile</a></li>";           
+            if(filetype($pathfile) == 'dir'){               
+                mkmap($pathfile);               
+            }           
+        }       
+    }closedir ($folder);echo "</ul>";}mkmap('source');
+    echo '
+
         </main>
         <footer class="pt-3 my-4 text-muted border-top fs-6">
             <p class="float-start fs-6">
@@ -86,7 +102,7 @@ elseif (empty($CurPageURL)) {
 </html>';
 }
 
-else {
+elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') == "404: Not Found" or empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))){
   if($_GET['code'] == "404"){$error = "No such file"; header("HTTP/1.1 404 Not found");}
   elseif ($_GET['code'] == "403"){$error = "Access failed"; header("HTTP/1.1 403 Access Denied");}
   else {$error = "Error";}
