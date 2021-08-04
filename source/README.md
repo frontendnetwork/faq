@@ -1,4 +1,4 @@
-# JokeNetwork Docs
+## JokeNetwork Docs
 
 Welcome to JokeNetworks Documentation page 🥳
 
