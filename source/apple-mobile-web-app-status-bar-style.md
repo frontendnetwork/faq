@@ -6,7 +6,7 @@ This does not work anymore, as there is no status-bar in iOS 10 and above, and i
 
 Read more about Apple's Webapps at [Apple's official documentation](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html).
 
-### Usage:
+## Usage:
 
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -17,5 +17,5 @@ Variables for `content`:
 
 Requires the [apple-mobile-web-app-capable](apple-mobile-web-app-capable) meta-tag to be set to `true`.
 
-### W3
+## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
