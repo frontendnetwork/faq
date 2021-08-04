@@ -20,7 +20,7 @@ You can also change existing doc-pages. Just click on "<i class="fab fa-github">
 
 Then just open a pull request and we'll review your page and add it.
 
-### Anyone can:
+**Anyone can:**
 
 - Create a new page (source/ → new file → .md file)
 - Edit files
