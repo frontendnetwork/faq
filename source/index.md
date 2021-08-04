@@ -8,6 +8,9 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 ### 3rd party services
 - Apple Metag Tags
 	- [apple-mobile-web-app-title](apple-mobile-web-app-title)
+	- [apple-mobile-web-app-capable](apple-mobile-web-app-capable)
+	- [apple-mobile-web-app-status-bar-style](apple-mobile-web-app-status-bar-style)
+	- [format-detection](format-detection)
 - Bitcoin Meta Tags
 	- [Bitcoin](bitcoin)
 - license Meta Tags
