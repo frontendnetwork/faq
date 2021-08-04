@@ -6,11 +6,11 @@ Since this is blocking an acessibility-feature, it should only be used when ther
 
 Read more about Apple's iOS meta-tags at [Apple's official documentation](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html).
 
-### Usage:
+## Usage:
 
 	<meta name="format-detection" content="telephone=no">
 
 `content` can also be `telephone=yes`, but the meta-tag is obsolete then, since the browser does this automatically.
 
-### W3
+## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
