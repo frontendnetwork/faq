@@ -10,7 +10,7 @@ Please see "blazerr-support-id-noncookies" for a GDPR conform version.
 
 <hr>
 
-## blazerr-support-id-noncookies (Deprecated)
+## <span class="badge bg-secondary">Deprecated</span> blazerr-support-id-noncookies
 Is used to identify users without a cookie, you can get your uniqid from libary "blazerr-cookies-eu.php" (available at the Member-Center).
 
 ### Usage:
@@ -26,7 +26,7 @@ Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-
 
 <hr>
 
-## blazerr-secure (Deprecated)
+## <span class="badge bg-secondary">Deprecated</span> blazerr-secure 
 Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-System. Synonym to blazerr-ssl, but only for old browsers such as Internet Explorer 7.
 
 ### Usage:
