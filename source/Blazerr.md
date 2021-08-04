@@ -1,8 +1,8 @@
 This is an overview over all meta tags used by [Blazerr by JokeNetwork](https://jokenetwork.de).
 
 ## blazerr-support-identifier
-Is used to identify users along with a cookie, which you get from the libary `blazerr-lib.php` (available at the member-center). 
-Please see "blazerr-support-id-noncookies" for a GDPR conform version.
+Is used to identify users along with a cookie, which you get from the library `blazerr-lib.php` (available at the member-center). 
+Please see `blazerr-support-id-noncookies` for a GDPR conform version.
 
 ### Usage: 
 
@@ -11,7 +11,7 @@ Please see "blazerr-support-id-noncookies" for a GDPR conform version.
 <hr>
 
 ## <span class="badge bg-secondary">Deprecated</span> blazerr-support-id-noncookies
-Is used to identify users without a cookie, you can get your uniqid from libary "blazerr-cookies-eu.php" (available at the Member-Center).
+Is used to identify users without a cookie, you can get your uniqid from library `blazerr-cookies-eu.php` (available at the Member-Center).
 
 ### Usage:
 	<meta name="blazerr-support-id-noncookies" content="Your uniqid">
