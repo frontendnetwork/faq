@@ -8,7 +8,6 @@ Please see `blazerr-support-id-noncookies` for a GDPR conform version.
 
 	<meta name="blazerr-support-identifier" content="Your uniqid">
 
-<hr>
 
 ## <span class="badge bg-secondary">Deprecated</span> blazerr-support-id-noncookies
 Is used to identify users without a cookie, you can get your uniqid from library `blazerr-cookies-eu.php` (available at the Member-Center).
@@ -16,7 +15,6 @@ Is used to identify users without a cookie, you can get your uniqid from library
 ### Usage:
 	<meta name="blazerr-support-id-noncookies" content="Your uniqid">
 
-<hr> 
 
 ## blazerr-ssl
 Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-System. If this tag is not set, Blazerr automatically connects via a SSL-Connection.
@@ -24,7 +22,6 @@ Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-
 ### Usage:
 	<meta name="blazerr-ssl" content="yes">
 
-<hr>
 
 ## <span class="badge bg-secondary">Deprecated</span> blazerr-secure 
 Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-System. Synonym to blazerr-ssl, but only for old browsers such as Internet Explorer 7.
@@ -32,7 +29,6 @@ Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-
 ### Usage:
 	<meta name="blazerr-secure" content="yes">
 
-<hr>
 
 ## blazerr-seo
 Checks whether Blazerr SEO has been used or not. It contains the user-id and the SEO Version
@@ -41,5 +37,5 @@ Checks whether Blazerr SEO has been used or not. It contains the user-id and the
 	<meta name="blazerr-seo" content="0001;v0.7">
  0001 is an example for a user id, v0.7 identifies which version of SEO is used (In this case version Beta 7 / 0.7). If you're using Blazerr SEO, you have to include this meta-tag. Otherwise the tool will not work.
 
-### W3
+## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
