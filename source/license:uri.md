@@ -1,7 +1,7 @@
 ## Meta Tag license:uri
 Is used to to define the uri to the license, under which a website is published. This can either be your own license upload or an official source, such as the CreativeCommons-website. 
 
-### Usage: 
+## Usage: 
 
 	<meta name="license:uri" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 
@@ -17,5 +17,5 @@ You'll find license-uris for `content` here:
 
 Also see [`license`](license).
 
-### W3
+## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator
