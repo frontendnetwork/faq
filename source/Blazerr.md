@@ -9,8 +9,8 @@ Please see `blazerr-support-id-noncookies` for a GDPR conform version.
 	<meta name="blazerr-support-identifier" content="Your uniqid">
 
 
-## blazerr-support-id-noncookies <span class="badge rounded-pill bg-secondary">Deprecated</span>
-Is used to identify users without a cookie, you can get your uniqid from library `blazerr-cookies-eu.php` (available at the Member-Center).
+## blazerr-support-id-noncookies
+<span class="badge rounded-pill bg-secondary">Deprecated</span> Is used to identify users without a cookie, you can get your uniqid from library `blazerr-cookies-eu.php` (available at the Member-Center).
 
 ### Usage:
 	<meta name="blazerr-support-id-noncookies" content="Your uniqid">
@@ -23,8 +23,8 @@ Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-
 	<meta name="blazerr-ssl" content="yes">
 
 
-## blazerr-secure  <span class="badge rounded-pill bg-secondary">Deprecated</span>
-Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-System. Synonym to blazerr-ssl, but only for old browsers such as Internet Explorer 7.
+## blazerr-secure
+<span class="badge rounded-pill bg-secondary">Deprecated</span> Decides whether connect via a secure connection or not to JokeNetwork's Blazerr-System. Synonym to blazerr-ssl, but only for old browsers such as Internet Explorer 7.
 
 ### Usage:
 	<meta name="blazerr-secure" content="yes">
