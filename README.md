@@ -13,25 +13,36 @@ In our documentation anyone can find public ~~docs for our (deprecated) services
 The "faq" page with questions answered, that weren't asked frequently, was created in January 2014, when [@philipbrembeck](https://github.com/philipbrembeck) was in need of creating a new HTML MetaExtension, which would not be marked as an error in the W3 Validator.
 
 ## Contribute
-If you want to contribute, fork the Git-Repro (jokenetwork/faq) and create a new document under `source/` with `<title of your page>.md`.
+If you want to contribute, fork the Git-Repro ([jokenetwork/faq](https://github.com/JokeNetwork/faq)) and create a new document under `source/` named `<title of your page>.md`.
 
-You can also change existing doc-pages.
-Then just open a pull request and we'll review your page and add it. 
+You can also change existing doc-pages. Just click on "<i class="fab fa-github"></i> Edit on GitHub" on the corresponding page.
+Then just open a pull request and we'll review your page and add it.
 
-**Please note that file-names are case-sensitive!**
+### How to contribute
+Please write your changes in [<i class="fab fa-markdown"></i> Markdown](https://www.markdownguide.org). 
 
-The main purpose of this "faq"/doc-page is now being a documentation-source to the @WHATWG Wiki.
+You can also use the following components of [<i class="fab fa-bootstrap"></i> Bootstrap v5.0](https://getbootstrap.com):
+- [`Alerts`](https://getbootstrap.com/docs/5.0/components/alerts/)
+- [`Badges`](https://getbootstrap.com/docs/5.0/components/badges/)
+- [`Buttons`](https://getbootstrap.com/docs/5.0/components/buttons/)
+- [`Cards`](https://getbootstrap.com/docs/5.0/components/card/)
 
-Anyone can:
+You can also use all free icons from [<i class="fab fa-font-awesome-alt"></i> FontAwesome v5.0](https://fontawesome.com).
+
+**Anyone can:**
 
 - Create a new page (source/ → new file → .md file)
 - Edit files
 > Please don't open issues but instead directly make a Pull Request with your edits/new creations.
 
+
 ### Add extensions to the WHATWG Wiki
-If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat).
-Then go to the Registry [<meta name>](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!). 
-You can link to https://faq.jokenetwork.de/[your-metaextension] for docs (_If you created them before_). 
+
+If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!). 
+You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note that file-names are case-sensitive!**) for the documentation of your meta-tag (Only if you created them before).
+
+### Add extension to W3 Validator 
+Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), informing the W3 about the meta-tag you added to the WHATWG Wiki, their purpose, and state that you added them to the WHATWG Wiki.
 
 ### File Structure
 

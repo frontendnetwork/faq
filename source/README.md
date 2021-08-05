@@ -17,8 +17,18 @@ The "_faq_" page with questions answered, that weren't really asked frequently, 
 If you want to contribute, fork the Git-Repro ([jokenetwork/faq](https://github.com/JokeNetwork/faq)) and create a new document under `source/` named `<title of your page>.md`.
 
 You can also change existing doc-pages. Just click on "<i class="fab fa-github"></i> Edit on GitHub" on the corresponding page.
-
 Then just open a pull request and we'll review your page and add it.
+
+### How to contribute
+Please write your changes in [<i class="fab fa-markdown"></i> Markdown](https://www.markdownguide.org). 
+
+You can also use the following components of [<i class="fab fa-bootstrap"></i> Bootstrap v5.0](https://getbootstrap.com):
+- [`Alerts`](https://getbootstrap.com/docs/5.0/components/alerts/)
+- [`Badges`](https://getbootstrap.com/docs/5.0/components/badges/)
+- [`Buttons`](https://getbootstrap.com/docs/5.0/components/buttons/)
+- [`Cards`](https://getbootstrap.com/docs/5.0/components/card/)
+
+You can also use all free icons from [<i class="fab fa-font-awesome-alt"></i> FontAwesome v5.0](https://fontawesome.com).
 
 **Anyone can:**
 
