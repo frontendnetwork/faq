@@ -6,3 +6,4 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 - [README](README) <span class="badge rounded-pill bg-success">Up to date: v2.1.0</span>
 
 ### index
+Displays <i class='far fa-check-circle'></i> if up to date - v2.1.0, <i class="far fa-times-circle"></i> if not up to date and <i class="far fa-question-circle"></i> if it matches another branch than `main`.
