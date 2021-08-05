@@ -5,5 +5,5 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 ### General information
 - [README](README)
 
-### index
+### <span class="badge rounded-pill bg-success">Up to date: v2.1.0</span> index
 
