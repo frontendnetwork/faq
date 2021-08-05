@@ -1,4 +1,4 @@
-## <span class="badge rounded-pill bg-secondary">Deprecated</span> Meta-Tag apple-mobile-web-app-status-bar-style
+## Meta-Tag apple-mobile-web-app-status-bar-style
 
 The apple-mobile-web-app-status-bar-style metatag sets the status-bar color of a web-app on iOS, when [apple-mobile-web-app-capable](apple-mobile-web-app-capable) is also set to `true`.
 
