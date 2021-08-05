@@ -1,4 +1,5 @@
-<?php  
+<?php
+$version = "v2.1.0";
 $CurPageURL = $_SERVER['REQUEST_URI'];  
 $CurPageURL = ltrim($CurPageURL, '/');
 
@@ -9,7 +10,33 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
   $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
   $Parsedown = new Parsedown();
 
-  $fileshort = strlen($file) > 5 ? substr($file,0,5)."..." : $file;
+  $fileshort = strlen($file) > 11 ? substr($file,0,11)."..." : $file;
+
+  $con = $Parsedown->text($content);
+
+  function add_ids_to_header_tags( $con ) {
+
+    $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
+    if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
+        $find = array();
+        $replace = array();
+        foreach( $matches as $match ) {
+            if ( strlen( $match['tag_extra'] ) && false !== stripos( $match['tag_extra'], 'id=' ) ) {
+                continue;
+            }
+            $find[]    = $match['full_tag'];
+            $id        = sanitize_title( $match['tag_contents'] );
+            $id_attr   = sprintf( ' id="%s"', $id );
+            $replace[] = sprintf( '<%1$s%2$s%3$s>%4$s <a href="#'.$id.'" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
+        }
+        $con = str_replace( $find, $replace, $con );
+    }
+    return $con;
+}
+
+function sanitize_title($title) {
+    return str_replace(" ", "-", $title);
+}
 
   echo '<!DOCTYPE html>
 <html lang="en">
@@ -40,22 +67,30 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
       <div style="clear:both"></div>
     </header>
     <main class="content">
-            '.$Parsedown->text($content).'
+            '.add_ids_to_header_tags( $con ).'
+            <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
         </main>
         <footer class="pt-3 my-4 text-muted border-top fs-6">
             <p class="float-start fs-6">
-                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a> ›</span>
+                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a> ›</span>
                 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$file.'" itemprop="url"><span itemprop="title">'.$fileshort.'</span></a></span>
+                 / 
+                <a href="privacy-policy">Privacy Policy</a>
             </p>
-            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
+            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
+            </p>
 
             <div class="sponsor">
              <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
             </div>
         </footer>
     </div>
-    <script src="js/dark-mode-switch.min.js"></script>
-    <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>
+    <script src="js/dark-mode-switch.min.js"></script>';
+    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de'); 
+        if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}  
+        elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';}  
+        else{echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} 
+        echo'
 </body>
 
 </html>';
@@ -68,8 +103,6 @@ elseif (empty($CurPageURL)) {
   $file = basename(index);
   $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
   $Parsedown = new Parsedown();
-
-  $fileshort = strlen($file) > 5 ? substr($file,0,5)."..." : $file;
 
   echo '<!DOCTYPE html>
 <html lang="en">
@@ -109,28 +142,36 @@ elseif (empty($CurPageURL)) {
     while ($file = readdir ($folder)) {   
         if ($file != "." && $file != "..") {           
             $pathfile = substr($file, 0, -3);           
-            echo "<li><a href='/$pathfile'>$pathfile</a></li>";           
+            echo "<li><a href='/$pathfile'>$pathfile</a> <i class='far fa-check-circle'></i></li>";           
             if(filetype($pathfile) == 'dir'){               
                 mkmap($pathfile);               
             }           
         }       
     }closedir ($folder);echo "</ul>";}mkmap('source');
     echo '
-
+    <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
         </main>
         <footer class="pt-3 my-4 text-muted border-top fs-6">
             <p class="float-start fs-6">
-                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a></span>
+                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a></span>
+                    / 
+                <a href="privacy-policy">Privacy Policy</a>
             </p>
-            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
+
+            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
+            </p>
 
             <div class="sponsor">
              <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
             </div>
         </footer>
     </div>
-    <script src="js/dark-mode-switch.min.js"></script>
-    <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>
+    <script src="js/dark-mode-switch.min.js"></script>';
+    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de'); 
+        if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}  
+        elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';}  
+        else{echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} 
+        echo '
 </body>
 
 </html>';
@@ -141,8 +182,8 @@ elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.
   elseif ($_GET['code'] == "403"){$error = "Access failed"; header("HTTP/1.1 403 Access Denied");}
   else {$error = "Error";}
 
-  $fileshort = strlen($CurPageURL) > 5 ? substr($CurPageURL,0,5)."..." : $$CurPageURL;
-  $filemid = strlen($CurPageURL) > 5 ? substr($CurPageURL,0,15)."..." : $$CurPageURL;
+  $fileshort = strlen($CurPageURL) > 8 ? substr($CurPageURL,0,11)."..." : $CurPageURL;
+  $filemid = strlen($CurPageURL) > 5 ? substr($CurPageURL,0,15)."..." : $CurPageURL;
 
   echo '<!DOCTYPE html>
 <html lang="en">
@@ -178,18 +219,25 @@ elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.
         </main>
         <footer class="pt-3 my-4 text-muted border-top fs-6">
             <p class="float-start fs-6">
-                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Documentations (Metatags)</span></a> ›</span>
+                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a> ›</span>
                 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$CurPageURL.'" itemprop="url"><span itemprop="title">'.$fileshort.'</span></a></span>
+                 / 
+                <a href="privacy-policy">Privacy Policy</a>
             </p>
-            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a></p>
+            <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
+            </p>
 
             <div class="sponsor">
              <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
             </div>
         </footer>
     </div>
-    <script src="js/dark-mode-switch.min.js"></script>
-    <script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>
+    <script src="js/dark-mode-switch.min.js"></script>';
+    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de'); 
+        if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}  
+        elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';}  
+        else{echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} 
+        echo '
 </body>
 
 </html>';
