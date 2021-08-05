@@ -6,4 +6,4 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 - [README](README)
 
 ### index
-Displays <i class='far fa-check-circle'></i> if up to date - v2.1.0, <i class="far fa-times-circle"></i> if not up to date and <i class="far fa-question-circle"></i> if it matches another branch than `main`.
+
