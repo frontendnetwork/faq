@@ -1,6 +1,8 @@
 # JokeNetwork FAQ
+[<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
 
 Welcome to JokeNetworks Documentation page 🥳
+
 
 Here you can find and contribute to the source-code of our FAQ-page, which is publicly available at https://faq.jokenetwork.de.
 
