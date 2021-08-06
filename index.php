@@ -1,10 +1,10 @@
 <?php
-$version = "v2.1.0";
+$version = "v2.2.0";
 $CurPageURL = $_SERVER['REQUEST_URI'];  
 $CurPageURL = ltrim($CurPageURL, '/');
 
 if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
-  header("HTTP/1.1 200 OK");
+  http_response_code(200);
   include 'Parsedown.php';
   $file = basename($CurPageURL);
   $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
