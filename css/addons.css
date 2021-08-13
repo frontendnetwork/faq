@@ -1,0 +1,208 @@
+  .content a[href^="https://"]:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: " \f35d " !important
+  }
+
+  .content a[href^="http://www.reddit.com/"]:after {
+      font-family: "Font Awesome 5 Brands";
+      font-weight: 900;
+      content: "  \f1a1 ";
+      line-height: 1
+  }
+
+  a {
+      color: #428bca;
+      text-decoration: none;
+  }
+
+  code {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #c7254e;
+      white-space: nowrap;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+  }
+
+  pre {
+      display: block;
+      padding: 9.5px;
+      margin: 0 0 30px 0;
+      font-size: 13px;
+      line-height: 1.428571429;
+      color: #333;
+      word-break: break-all;
+      word-wrap: break-word;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+      white-space: pre-wrap;
+
+  }
+
+  pre code {
+      background: none !important;
+  }
+
+
+  h2,
+  .border-bottom,
+  .mb-5 {
+      border-bottom: 1px solid #dee2e6 !important;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+  }
+
+  blockquote {
+      border-left: .25em solid rgb(208, 215, 222);
+      color: rgb(87, 96, 106);
+      margin: 1rem 1rem 0 0;
+      padding: 0 1em;
+  }
+
+  .btn-dark {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      border: 1px solid #b2bec3;
+      font-size: 1rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      cursor: pointer;
+      padding: .25rem .5rem;
+      font-size: .875rem;
+      border-radius: .2rem;
+      color: #212529;
+      background-color: #dfe6e9;
+  }
+
+  .btn-dark:hover {
+      border: 1px solid #b2bec3;
+      color: #212529;
+      background-color: #e1eaed;
+  }
+
+  .fa-heart {
+      color: #f54278;
+  }
+
+  .sponsor {
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  #darkmode:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: " \f186 " !important
+  }
+
+  li {
+      padding-bottom: 5px;
+  }
+
+  .fa-check-circle {
+      color: #55efc4;
+  }
+
+  .fa-times-circle {
+      color: #dc3545;
+  }
+
+  .fa-question-circle {
+      color: #6c757d;
+  }
+
+  a .fa-link {
+      color: #000;
+  }
+
+  .fa-link {
+    font-size: 1rem;
+    opacity: 0;
+  }
+
+  h2:hover .fa-link{
+    opacity: 1;
+  }
+
+  .bg-secondary {
+      background: none !important;
+      border: 1.5px solid #6c757d !important;
+      color: #6c757d;
+      font-weight: 400 !important;
+  }
+
+  .bg-danger {
+      background: none !important;
+      border: 1.5px solid #dc3545 !important;
+      color: #dc3545;
+      font-weight: 400 !important;
+  }
+
+  .bg-success {
+      background: none !important;
+      border: 1.5px solid #55efc4 !important;
+      color: #55efc4;
+      font-weight: 400 !important;
+  }
+table {
+display: block;
+max-width: 100%;
+overflow: auto;
+width: 100%;
+}
+
+thead {
+display: table-header-group;
+vertical-align: middle;
+border-top-color: inherit;
+border-right-color: inherit;
+border-bottom-color: inherit;
+border-left-color: inherit;
+}
+
+tbody {
+display: table-row-group;
+vertical-align: middle;
+border-top-color: inherit;
+border-right-color: inherit;
+border-bottom-color: inherit;
+border-left-color: inherit;
+}
+
+table tr {
+border-top: 1px solid rgb(33, 38, 45);
+}
+
+tr {
+display: table-row;
+vertical-align: inherit;
+border-top-color: inherit;
+border-right-color: inherit;
+border-bottom-color: inherit;
+border-left-color: inherit;
+}
+
+table td, table th {
+border: 1px solid #30363d;
+padding: 6px 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+  display: block;
+  }
+
+  .nav-link {
+  padding: 0; 
+  }
+}
