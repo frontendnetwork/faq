@@ -31,10 +31,14 @@
     color: #FFF;
 }
 
-[data-theme="dark"] h2,
-.border-bottom, .mb-5{
+[data-theme="dark"] .mb-5{
     border-bottom: 1px solid rgb(33, 38, 45)!important;
 }
+
+[data-theme="dark"] h2, .border-bottom{
+    border-bottom: 1px solid rgb(33, 38, 45)!important;
+}
+
 
 [data-theme="dark"] .border-top {
     border-top: 1px solid rgb(33, 38, 45) !important;
