@@ -205,4 +205,8 @@ padding: 6px 13px;
   .nav-link {
   padding: 0; 
   }
+
+  .sponsor {
+    display: none;
+  }
 }
