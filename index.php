@@ -1,5 +1,5 @@
 <?php
-$version = "v2.2.2";
+$version = "v2.2.3";
 $CurPageURL = $_SERVER['REQUEST_URI'];  
 $CurPageURL = ltrim($CurPageURL, '/');
 
