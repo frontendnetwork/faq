@@ -2,6 +2,15 @@
 .rejected/
 .rejected
 .htaccess
-css
-css/
+css/fa/
+css/fa
+css/sprites/
+css/sprites
+css/svgs/
+css/svgs
+css/webfonts
+css/webfonts/
 Parsedown.php
+css/sponsor.png
+css/sponsor-light.png
+privacy-policy.php

@@ -1,0 +1,71 @@
+[data-theme="dark"] {
+    background: #121212;
+    color: rgb(201, 209, 217);
+}
+
+
+[data-theme="dark"] body {
+    background: #121212;
+    color: rgb(201, 209, 217);
+}
+
+[data-theme="dark"] a {
+    color: rgb(88, 166, 255);
+}
+
+[data-theme="dark"] blockquote {
+    border-left: .25em solid rgb(48, 54, 61);
+    color: rgb(139, 148, 158);
+    margin: 1rem 1rem 0 0;
+    padding: 0 1em;
+}
+
+[data-theme="dark"] pre {
+    color: #FFF;
+    background-color: #222f3e;
+    border: 0px solid !important;
+}
+
+[data-theme="dark"] code {
+    background-color: #576574;
+    color: #FFF;
+}
+
+[data-theme="dark"] .mb-5{
+    border-bottom: 1px solid rgb(33, 38, 45)!important;
+}
+
+[data-theme="dark"] h2, .border-bottom{
+    border-bottom: 1px solid rgb(33, 38, 45)!important;
+}
+
+
+[data-theme="dark"] .border-top {
+    border-top: 1px solid rgb(33, 38, 45) !important;
+}
+
+[data-theme="dark"] .btn-dark {
+    border: 1px solid #424242;
+    color: #fff;
+    background-color: #212529;
+}
+
+[data-theme="dark"] .btn-dark:hover {
+    border: 1px solid #424242;
+    color: #fff;
+    background-color: #1c1f23;
+}
+
+[data-theme="dark"] #darkmode:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f0eb " !important
+  }
+
+[data-theme="dark"] .bg-secondary {
+color: rgb(201, 209, 217)!important;
+}
+
+[data-theme="dark"] a .fa-link {
+      color: rgb(201, 209, 217)!important;
+  }

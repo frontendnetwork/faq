@@ -11,4 +11,4 @@
 
 ## Reporting a Vulnerability
 
-Directly report a vulnerability to faq@jokenetwork.de
+Directly report a vulnerability to faq@cldsi.de or open up an issue in this repo if the security issue is not sensible.
