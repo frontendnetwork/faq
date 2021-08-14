@@ -3,6 +3,10 @@ $version = "v2.2.2";
 $CurPageURL = $_SERVER['REQUEST_URI'];  
 $CurPageURL = ltrim($CurPageURL, '/');
 
+if (substr($CurPageURL,-3) == ".md") {
+    $CurPageURL = substr($CurPageURL, 0,-3);
+}
+
 if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
   http_response_code(200);
   include 'Parsedown.php';
@@ -97,7 +101,7 @@ function sanitize_title($title) {
 
 } 
 
-elseif (empty($CurPageURL)) {
+elseif (empty($CurPageURL) or $CurPageURL == ".%E2%80%8A.") {
   header("HTTP/1.1 200 OK");
   include 'Parsedown.php';
   $file = basename(index);
@@ -134,21 +138,26 @@ elseif (empty($CurPageURL)) {
     </header>
     <main class="content">
             '.$Parsedown->text($content);
+     echo '<ul>';       
+    $html = file_get_contents("https://github.com/JokeNetwork/faq/tree/main/source");
+    $DOM = new DOMDocument();
+    $DOM->loadHTML($html);
+    $finder = new DomXPath($DOM);
+    $classname = 'rowheader';
+    $nodes = $finder->query("//*[contains(@role, '$classname')]");
 
-            function mkmap($dir){
-    echo "<ul>";   
-    $folder = opendir ($dir);
+    $liValues = array();
+    foreach ($nodes as $li) {
+        $liValues[] = $li->nodeValue;
+    }
 
-    while ($file = readdir ($folder)) {   
-        if ($file != "." && $file != "..") {           
-            $pathfile = substr($file, 0, -3);           
-            echo "<li><a href='/$pathfile'>$pathfile</a> <i class='far fa-check-circle'></i></li>";           
-            if(filetype($pathfile) == 'dir'){               
-                mkmap($pathfile);               
-            }           
-        }       
-    }closedir ($folder);echo "</ul>";}mkmap('source');
-    echo '
+    for ($i = 0; $i < count($liValues); $i++)
+    {
+
+      echo '<li><a href="'.$liValues[$i].'">'.$liValues[$i].'</a> <i class="far fa-check-circle"></i></li>';
+    }
+
+    echo '</ul>
     <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
         </main>
         <footer class="pt-3 my-4 text-muted border-top fs-6">
