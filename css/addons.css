@@ -203,14 +203,13 @@ padding: 6px 13px;
 }
 
 .contribute {
-  display:inline;
-  margin-right: 5px;
-  font-size: .5rem;
+  padding-right: 10px;
+  font-size: .8rem;
 }
 
 .contribute a {
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -238,6 +237,6 @@ padding: 6px 13px;
   }
   .contribute {
   display:list-item;
-  margin-right: 5px;
+  padding-right: 0px;
   }
 }
