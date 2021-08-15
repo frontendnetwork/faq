@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.2.6";
+$version = "v2.2.7";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
@@ -35,10 +35,7 @@ if (substr($CurPageURL,-3) == ".md") {
         $Parsedown = new Parsedown();
         $con = $Parsedown->text($content);
 
-        // Check if filename is longer than 11 characters, shorten if true
-        $fileshort = strlen($file) > 11 ? substr($file,0,11)."..." : $file;
-
-        // Add links and ids to h2 headers automatically 
+         // Add links and ids to h2 headers automatically 
         function add_ids_to_header_tags( $con ) {
             $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
             if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
@@ -63,6 +60,9 @@ if (substr($CurPageURL,-3) == ".md") {
             return str_replace(" ", "-", $title);
         }
 
+        // Check if filename is longer than 11 characters, shorten if true
+        $fileshort = strlen($file) > 11 ? substr($file,0,11)."..." : $file;
+
         // Render the page
         echo '<!DOCTYPE html>
         <html lang="en">
@@ -71,10 +71,12 @@ if (substr($CurPageURL,-3) == ".md") {
             <meta charset="utf-8">
             <title>MetaTag Docs » '.$file.'</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
+            <meta name="viewport" content="width=device-width">
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
             <link href="css/darkmode.css" rel="stylesheet">
+
         </head>
 
         <body data-theme="dark">
@@ -138,6 +140,32 @@ if (substr($CurPageURL,-3) == ".md") {
         $file = basename(index);
         $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
         $Parsedown = new Parsedown();
+        $con = $Parsedown->text($content);
+
+         // Add links and ids to h2 headers automatically 
+        function add_ids_to_header_tags( $con ) {
+            $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
+            if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
+                $find = array();
+                $replace = array();
+                foreach( $matches as $match ) {
+                    if ( strlen( $match['tag_extra'] ) && false !== stripos( $match['tag_extra'], 'id=' ) ) {
+                        continue;
+                    }
+                    $find[]    = $match['full_tag'];
+                    $id        = sanitize_title( $match['tag_contents'] );
+                    $id_attr   = sprintf( ' id="%s"', $id );
+                    $replace[] = sprintf( '<%1$s%2$s%3$s>%4$s <a href="#'.$id.'" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
+                }
+                $con = str_replace( $find, $replace, $con );
+            }
+            return $con;
+        }
+
+        // Replace empty space with "-" for links 
+        function sanitize_title($title) {
+            return str_replace(" ", "-", $title);
+        }
 
         // Render the page
         echo '<!DOCTYPE html>
@@ -147,6 +175,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <meta charset="utf-8">
             <title>MetaTag Docs » index</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
+            <meta name="viewport" content="width=device-width">
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
@@ -169,7 +198,7 @@ if (substr($CurPageURL,-3) == ".md") {
               <div style="clear:both"></div>
             </header>
             <main class="content">
-                    '.$Parsedown->text($content);
+            '.add_ids_to_header_tags( $con );
 
             // Render a "index of"-style ul-menu, using GitHub as a source 
             echo '<ul>';
@@ -179,12 +208,13 @@ if (substr($CurPageURL,-3) == ".md") {
             array_walk($fileInfo, function($data) { print '<li><a href="'.$data['name'].'">'.$data['name'].'</a> <i class="far fa-check-circle"></i></li>'; });
 
             echo '</ul>
-            <h3>Contributors</h3><ul class="contributors">';
+            <h2 id="Contributors">Contributors <a href="#Contributors" class="heading-link"><i class="fas fa-link"></i></a></h2><ul class="contributors">';
 
             // Load contributors from GitHub
             $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
-            array_walk($contributors, function($data) { print '<li class="contribute"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a></li>'; });
-            echo'</ul>
+            array_walk($contributors, function($data) { print '<li class="contribute"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a> '.$data['contributions'].' Contributions</li>'; });
+            echo'<li class="contribute"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?s=200&v=4" alt="WHATWG"></a><a href="//github.com/WHATWG">WHATWG</a></li></ul>
+            <p>Want to get added to this list? <a href="README.md#Contribute">Learn how to contribute</a>.</p>
             <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
                 </main>
                 <footer class="pt-3 my-4 text-muted border-top fs-6">
@@ -246,6 +276,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <meta charset="utf-8">
             <title>MetaTag Docs » '.$error.'</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
+            <meta name="viewport" content="width=device-width">
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
