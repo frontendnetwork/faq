@@ -3,7 +3,13 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.2.5";
+$version = "v2.2.6";
+
+// Require GitHub API via php-github-api by KnpLabs
+require_once '/home/jake//vendor/autoload.php';
+require_once 'credentials.php';
+$client = new \Github\Client();
+$client->authenticate($user, $secret, Github\Client::AUTH_CLIENT_ID);
 
 // Server URI
 $CurPageURL = $_SERVER['REQUEST_URI'];  
@@ -18,6 +24,7 @@ if (substr($CurPageURL,-3) == ".md") {
     // Check if requested file exists
     if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
         
+
         // Send HTTP Response Code "200 - OK"
         http_response_code(200);
 
@@ -96,7 +103,7 @@ if (substr($CurPageURL,-3) == ".md") {
                          / 
                         <a href="privacy-policy">Privacy Policy</a>
                     </p>
-                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
+                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a>
                     </p>
 
                     <div class="sponsor">
@@ -165,25 +172,19 @@ if (substr($CurPageURL,-3) == ".md") {
                     '.$Parsedown->text($content);
 
             // Render a "index of"-style ul-menu, using GitHub as a source 
-            echo '<ul>';       
-            $html = file_get_contents("https://github.com/JokeNetwork/faq/tree/main/source");
-            $DOM = new DOMDocument();
-            $DOM->loadHTML($html);
-            $finder = new DomXPath($DOM);
-            $rolename = 'rowheader';
-            $nodes = $finder->query("//*[contains(@role, '$rolename')]");
+            echo '<ul>';
 
-            $liValues = array();
-            foreach ($nodes as $li) {
-                $liValues[] = $li->nodeValue;
-            }
-
-            for ($i = 0; $i < count($liValues); $i++)
-            {
-              echo '<li><a href="'.$liValues[$i].'">'.$liValues[$i].'</a> <i class="far fa-check-circle"></i></li>';
-            }
+            // Load files from GitHub
+            $fileInfo = $client->api('repo')->contents()->show('JokeNetwork', 'faq', 'source');
+            array_walk($fileInfo, function($data) { print '<li><a href="'.$data['name'].'">'.$data['name'].'</a> <i class="far fa-check-circle"></i></li>'; });
 
             echo '</ul>
+            <h3>Contributors</h3><ul class="contributors">';
+
+            // Load contributors from GitHub
+            $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
+            array_walk($contributors, function($data) { print '<li class="contribute"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a></li>'; });
+            echo'</ul>
             <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
                 </main>
                 <footer class="pt-3 my-4 text-muted border-top fs-6">
@@ -193,7 +194,7 @@ if (substr($CurPageURL,-3) == ".md") {
                         <a href="privacy-policy">Privacy Policy</a>
                     </p>
 
-                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
+                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a>
                     </p>
 
                     <div class="sponsor">
