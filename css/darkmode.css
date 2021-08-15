@@ -71,5 +71,5 @@ color: rgb(201, 209, 217)!important;
   }
 
 [data-theme="dark"] .contribute a {
-  color: #FFF;
+  color: rgb(201, 209, 217);
 }
