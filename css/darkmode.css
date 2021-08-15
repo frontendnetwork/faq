@@ -69,3 +69,7 @@ color: rgb(201, 209, 217)!important;
 [data-theme="dark"] a .fa-link {
       color: rgb(201, 209, 217)!important;
   }
+
+[data-theme="dark"] .contribute a {
+  color: #FFF;
+}

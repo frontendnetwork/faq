@@ -197,6 +197,30 @@ border: 1px solid #30363d;
 padding: 6px 13px;
 }
 
+.contributors {
+  list-style: none;
+  padding-left: 0px !important;
+}
+
+.contribute {
+  display:inline;
+  margin-right: 5px;
+  font-size: .5rem;
+}
+
+.contribute a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contribute img {
+  margin-right: 5px;
+  height:30px;
+  width:30px;
+  border-radius:50px;
+}
+
 @media only screen and (max-width: 768px) {
   .nav {
   display: block;
@@ -208,5 +232,12 @@ padding: 6px 13px;
 
   .sponsor {
     display: none;
+  }
+  .contributors {
+  list-style: none;
+  }
+  .contribute {
+  display:list-item;
+  margin-right: 5px;
   }
 }
