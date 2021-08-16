@@ -41,13 +41,7 @@ That means that
     <meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
 ```
 
-## One liner example
-
-```
-<meta charset="UTF-8">
-```
-
-## Example like on their site 
+## Copied from Parsedown demo 
 ```
 <?php
 
