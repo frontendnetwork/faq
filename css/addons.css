@@ -11,9 +11,10 @@
       line-height: 1
   }
 
-  a {
+  a, .link {
       color: #428bca;
       text-decoration: none;
+      cursor: pointer;
   }
 
   code {
@@ -218,6 +219,10 @@ padding: 6px 13px;
   height:30px;
   width:30px;
   border-radius:50px;
+}
+
+.search {
+  max-width: 25%;
 }
 
 @media only screen and (max-width: 768px) {
