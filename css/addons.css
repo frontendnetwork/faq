@@ -206,6 +206,7 @@ padding: 6px 13px;
 .contribute {
   padding-right: 10px;
   font-size: .8rem;
+  display:inline
 }
 
 .contribute a {
@@ -214,15 +215,28 @@ padding: 6px 13px;
   font-size: 1rem;
 }
 
-.contribute img {
+.search {
+  max-width: 25%;
+}
+
+.contributor_card{
+  display: inline-block;
+  width: 180px;
+  margin-right: 30px;
+  padding-bottom: 10px;
+}
+
+.contributor_image img {
+  float: left;
   margin-right: 5px;
-  height:30px;
-  width:30px;
+  height:40px;
+  width:40px;
   border-radius:50px;
 }
 
-.search {
-  max-width: 25%;
+.contributor_contributions::before {
+  content: "\A";
+  white-space: pre;
 }
 
 @media only screen and (max-width: 768px) {
