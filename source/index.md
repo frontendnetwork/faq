@@ -8,4 +8,3 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 - [What is WHATWG?](About%20WHATWG)
 
 ## index
-
