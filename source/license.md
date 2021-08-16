@@ -6,6 +6,10 @@ Is used to to define the license under which a website is published.
 	<meta name="license" content="C-BY-NC-SA-4.0">
 
 `content` may be:
+
+<details>
+  <summary>License types</summary>
+  
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 - [GNU-GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 - [GNU-LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)
@@ -14,8 +18,9 @@ Is used to to define the license under which a website is published.
 - [MIT](https://choosealicense.com/licenses/mit/)
 - [Boost-Software-1.0](https://choosealicense.com/licenses/bsl-1.0/)
 - [The-Unlicense](https://choosealicense.com/licenses/unlicense/)
+</details>
 
-Other license types are possible too, but it is recommended to link to the license via [`license:uri`](/licenseuri).
+Other license types are also possible, but it is then recommended to link to the license via [`license:uri`](/licenseuri).
 
 ## W3
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator
