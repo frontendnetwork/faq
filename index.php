@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.2.8";
+$version = "v2.2.9";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
@@ -226,8 +226,11 @@ if (substr($CurPageURL,-3) == ".md") {
 
             // Load contributors from GitHub
             $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
-            array_walk($contributors, function($data) { print '<li class="contribute"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a> '.$data['contributions'].' Contributions</li>'; });
-            echo'<li class="contribute"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?s=200&v=4" alt="WHATWG"></a><a href="//github.com/WHATWG">WHATWG</a></li></ul>
+            array_walk($contributors, function($data) { print '<li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a></span><span class="contributor_contributions">'.$data['contributions'].' Contributions</span></div></div></li>'; });
+            echo'
+            <li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?s=200&v=4" alt="WHATWG"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/WHATWG">WHATWG</a></span><span class="contributor_contributions">Contributing</span></div></div></li>
+
+            </ul>
             <p>Want to get added to this list? <a href="README.md#Contribute">Learn how to contribute</a>.</p>
             <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
                 </main>
