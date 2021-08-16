@@ -72,6 +72,11 @@ if (substr($CurPageURL,-3) == ".md") {
             <title>MetaTag Docs » '.$file.'</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
             <meta name="viewport" content="width=device-width">
+
+            <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+            <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
@@ -176,10 +181,16 @@ if (substr($CurPageURL,-3) == ".md") {
             <title>MetaTag Docs » index</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
             <meta name="viewport" content="width=device-width">
+
+            <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+            <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
             <link href="css/darkmode.css" rel="stylesheet">
+            
             <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         </head>
 
