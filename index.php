@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.2.7";
+$version = "v2.2.8";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
@@ -180,6 +180,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
             <link href="css/darkmode.css" rel="stylesheet">
+            <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         </head>
 
         <body data-theme="dark">
@@ -201,14 +202,27 @@ if (substr($CurPageURL,-3) == ".md") {
             '.add_ids_to_header_tags( $con );
 
             // Render a "index of"-style ul-menu, using GitHub as a source 
-            echo '<ul>';
-
             // Load files from GitHub
             $fileInfo = $client->api('repo')->contents()->show('JokeNetwork', 'faq', 'source');
-            array_walk($fileInfo, function($data) { print '<li><a href="'.$data['name'].'">'.$data['name'].'</a> <i class="far fa-check-circle"></i></li>'; });
 
-            echo '</ul>
-            <h2 id="Contributors">Contributors <a href="#Contributors" class="heading-link"><i class="fas fa-link"></i></a></h2><ul class="contributors">';
+            ?>
+
+            <!-- Load list from GitHub into "items" -->
+            <div x-data="{search: '', items: [<?php array_walk($fileInfo, function($data) { print "'".$data['name']."',"; }); ?>],get filteredItems() {return this.items.filter(i => i.startsWith(this.search))}}">
+
+            <div class="input-group input-group-sm mb-3 search">
+                <input x-model="search"  type="text" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="Search for MetaExtensions...">
+                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-search"></i></span>
+            </div>
+
+                <ul>
+                    <template x-for="item in filteredItems" :key="item">
+                        <li x-text="item" class="link" onclick="window.open(innerHTML, '_self')"></li>
+                    </template>
+                </ul>
+            </div>
+
+            <?php echo '<h2 id="Contributors">Contributors <a href="#Contributors" class="heading-link"><i class="fas fa-link"></i></a></h2><ul class="contributors">';
 
             // Load contributors from GitHub
             $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
