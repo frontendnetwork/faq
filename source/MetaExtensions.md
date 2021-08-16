@@ -16,18 +16,36 @@ That means that
 `<meta>`-tags can look anything like this in your `<head>` section:
 
     <meta charset="UTF-8">
+    
+    
     <meta http-equiv="language" content="en">
     
+    
+    
     <meta name="description" content="JokeNetworks FAQ">
+    
+    
     <meta name="keywords" content="Documentation, FAQ, MetaTags, HTML, WHATWG">
+    
+    
     <meta name="author" content="JokeNetwork">
+    
+    
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
+    
     <meta name="robots" content="noindex,nofollow">
+    
+    
     <meta name="revisit" content="10 days">
     
+    
+    
     <meta http-equiv="refresh" content="10">
+    
+    
     <meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
     
 ### Using MetaTags for SEO
