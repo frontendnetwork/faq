@@ -7,9 +7,6 @@ Is used to to define the license under which a website is published.
 
 `content` may be:
 
-<details>
-  <summary>License types</summary>
-  
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 - [GNU-GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 - [GNU-LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)
@@ -18,7 +15,6 @@ Is used to to define the license under which a website is published.
 - [MIT](https://choosealicense.com/licenses/mit/)
 - [Boost-Software-1.0](https://choosealicense.com/licenses/bsl-1.0/)
 - [The-Unlicense](https://choosealicense.com/licenses/unlicense/)
-</details>
 
 Other license types are also possible, but it is then recommended to link to the license via [`license:uri`](/licenseuri).
 
