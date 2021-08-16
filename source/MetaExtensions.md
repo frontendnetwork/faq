@@ -26,19 +26,6 @@ That means that
 - `<meta http-equiv="refresh" content="10">`
 - `<meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">`
 
-## `<code>`-Exmaple with a code-block
-<code>  
-<meta http-equiv="language" content="en">   
-<meta name="description" content="JokeNetworks FAQ">   
-<meta name="keywords" content="Documentation, FAQ, MetaTags, HTML, WHATWG">   
-<meta name="author" content="JokeNetwork">   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<meta name="robots" content="noindex,nofollow">   
-<meta name="revisit" content="10 days">   
-<meta http-equiv="refresh" content="10">   
-<meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">   
-</code>
-
 ## Three marks example
 
 ```
@@ -75,18 +62,6 @@ tilde
 ```php
 echo 'language identifier';
 ```
-
-## Another example from their site
-    <?php
-
-    $message = 'Hello World!';
-    echo $message;
-
----
-
-    > not a quote
-    - not a list item
-    [not a reference]: http://foo.com
     
 ### Using MetaTags for SEO
 Some `<meta>`-tags are relevant for search engine optimazation. 
