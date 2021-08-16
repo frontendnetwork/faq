@@ -1,3 +1,5 @@
+<img src="https://faq.jokenetwork.de/img/logo.svg" alt="Logo Alternative" width="100">
+
 ## JokeNetwork Docs
 
 Welcome to JokeNetworks Documentation page 🥳
