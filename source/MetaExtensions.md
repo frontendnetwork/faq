@@ -1,5 +1,3 @@
-<img src="https://faq.jokenetwork.de/img/logo_alt.svg" alt="Logo Alternative" width="100">
-
 ## About MetaTags
 
 > The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.
