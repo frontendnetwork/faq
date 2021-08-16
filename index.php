@@ -33,6 +33,7 @@ if (substr($CurPageURL,-3) == ".md") {
         $file = basename($CurPageURL);
         $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
         $Parsedown = new Parsedown();
+        $Parsedown->setBreaksEnabled(true);
         $con = $Parsedown->text($content);
 
          // Add links and ids to h2 headers automatically 
@@ -145,6 +146,7 @@ if (substr($CurPageURL,-3) == ".md") {
         $file = basename(index);
         $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
         $Parsedown = new Parsedown();
+        $Parsedown->setBreaksEnabled(true);
         $con = $Parsedown->text($content);
 
          // Add links and ids to h2 headers automatically 
@@ -190,7 +192,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <link href="css/fa/all.min.css" rel="stylesheet">
             <link href="css/addons.css" rel="stylesheet">
             <link href="css/darkmode.css" rel="stylesheet">
-            
+
             <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         </head>
 
