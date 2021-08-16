@@ -108,6 +108,7 @@
 
   li {
       padding-bottom: 5px;
+      max-width: 50%;
   }
 
   .fa-check-circle {
@@ -258,4 +259,14 @@ padding: 6px 13px;
   display:list-item;
   padding-right: 0px;
   }
+  .search {
+  max-width: 100%;
+  }
+  li {
+      max-width: 100%;
+  }
+  .fa-link {
+    opacity: 1;
+  }
+
 }
