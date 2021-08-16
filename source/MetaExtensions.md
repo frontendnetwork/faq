@@ -19,16 +19,40 @@ That means that
 
     <meta charset="UTF-8">
     <meta http-equiv="language" content="en">
+    
     <meta name="description" content="JokeNetworks FAQ">
     <meta name="keywords" content="Documentation, FAQ, MetaTags, HTML, WHATWG">
     <meta name="author" content="JokeNetwork">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="robots" content="noindex,nofollow">
+    <meta name="revisit" content="10 days">
+    
     <meta http-equiv="refresh" content="10">
     <meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
+    
+### Using MetaTags for SEO
+Some `<meta>`-tags are relevant for search engine optimazation. 
 
+While `name="keywords"` is marked as <span class="badge bg-secondary">Deprecated</span> and is therefore not relevant anymore,
+`name="description"` is not fully ignored by Search Enginges, but Google encourages you to put more effort into your pages content instead of describing it through the description-extension. 
+
+A full overview over MetaTags which are understood by Google and other search engines is listed on a [Google Search Central Page](https://developers.google.com/search/docs/advanced/crawling/special-tags).
+
+### Reference
+Read more about MetaTags at [W3Schools](https://www.w3schools.com/tags/tag_meta.asp) or at [Google Search Central](https://developers.google.com/search/docs/advanced/crawling/special-tags).
 
 ## About MetaExtensions
 
-Meta Extensions are extension values for the `name=""` attribute of the HTML `<meta>` element.
+Meta Extensions are extension values for the `name=""` attribute of the HTML `<meta>` element and are the main subject of the Docs at [faq.jokenetwork.de](/).
+
+The `name=""`attributes for the `<meta>`-tags have to be documented and listed as "*Proposal*" in the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).
+
+Also, if they should not be marked as an error in the [W3 Validator](https://validator.w3.org/nu/), they have to be added from the WHATWG Wiki to the Validator.
+
+Learn more about adding a MetaExtension to the WHATWG Wiki and to the W3 Validator here: [Contribute](README#Contribute).
+
+### Reference
+Read more about MetaExtensions at the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).
 
