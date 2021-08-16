@@ -1,6 +1,20 @@
-# JokeNetwork FAQ
-[![Codacy Security Scan](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml)
-[<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
+<p align="center">
+ <img width="100px" src="logo.svg" align="center" alt="JokeNetwork FAQ Logo">
+ <h1 align="center">JokeNetwork FAQ</h1>
+ <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml">
+      <img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg">
+    </a>
+    <a href="https://github.com/jokenetwork/faq/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/jokenetwork/faq?color=0088ff">
+    </a>
+    <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
+    <a href="https://github.com/sponsors/philipbrembeck">
+      <img alt="Consider Sponsoring" width="80" src="https://faq.jokenetwork.de/css/sponsor.png">
+    </a>
+  </p>
 
 Welcome to JokeNetworks Documentation page 🥳
 
@@ -38,6 +52,7 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 
 ### Add extensions to the WHATWG Wiki
+<img width="100px" src="logo_alt.svg" align="center" alt="JokeNetwork FAQ Logo">
 
 If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!). 
 You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note that file-names are case-sensitive!**) for the documentation of your meta-tag (Only if you created them before).
