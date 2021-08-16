@@ -80,10 +80,11 @@ meta name="robots" content="noindex,nofollow">
 ### Using MetaTags for SEO
 Some `<meta>`-tags are relevant for search engine optimazation. 
 
-While `name="keywords"` is marked as <span class="badge bg-secondary">Deprecated</span> and is therefore not relevant anymore,
-`name="description"` is not fully ignored by Search Enginges, but Google encourages you to put more effort into your pages content instead of describing it through the description-extension. 
-
 A full overview over MetaTags which are understood by Google and other search engines is listed on a [Google Search Central Page](https://developers.google.com/search/docs/advanced/crawling/special-tags).
+
+> ⚠️ **Please note:**
+While `name="keywords"` is marked as <span class="badge bg-secondary">Deprecated</span> and is therefore not relevant anymore,
+`name="description"` is not fully ignored by search enginges, but Google encourages you to put more effort into your pages content instead of describing it through the description-extension. 
 
 ### Reference
 Read more about MetaTags at [W3Schools](https://www.w3schools.com/tags/tag_meta.asp) or at [Google Search Central](https://developers.google.com/search/docs/advanced/crawling/special-tags).
