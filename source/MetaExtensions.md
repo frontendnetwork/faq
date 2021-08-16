@@ -47,7 +47,7 @@ Read more about MetaTags at [W3Schools](https://www.w3schools.com/tags/tag_meta.
 
 Meta Extensions are extension values for the `name=""` attribute of the HTML `<meta>` element and are the main subject of the Docs at [faq.jokenetwork.de](/).
 
-The `name=""`attributes for the `<meta>`-tags have to be documented and listed as "*Proposal*" in the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).
+The `name=""`attributes for the `<meta>`-tags should be well documented to be understood by everyone and listed as "*Proposal*" in the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).
 
 ~~Also, if they should not be marked as an error in the [W3 Validator](https://validator.w3.org/nu/), they have to be added from the WHATWG Wiki to the Validator.~~
 
