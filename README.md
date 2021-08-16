@@ -1,4 +1,5 @@
 # JokeNetwork FAQ
+[![Codacy Security Scan](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml)
 [<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
 
 Welcome to JokeNetworks Documentation page 🥳
