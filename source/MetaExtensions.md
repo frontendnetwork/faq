@@ -82,7 +82,12 @@ Some `<meta>`-tags are relevant for search engine optimazation.
 
 A full overview over MetaTags which are understood by Google and other search engines is listed on a [Google Search Central Page](https://developers.google.com/search/docs/advanced/crawling/special-tags).
 
-> ⚠️ **Please note:**
+<div class="alert alert-warning d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+  <div>
+    Please note!
+  </div>
+</div>
 
 While `name="keywords"` is marked as <span class="badge bg-secondary">Deprecated</span> and is therefore not relevant anymore,
 `name="description"` is not fully ignored by search enginges, but Google encourages you to put more effort into your pages content instead of describing it through the description-extension. 
