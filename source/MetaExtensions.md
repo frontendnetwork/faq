@@ -28,6 +28,7 @@ That means that
 
 ## First example 
 
+
     <meta charset="UTF-8">
     <meta http-equiv="language" content="en">
     <meta name="description" content="JokeNetworks FAQ">
