@@ -1,4 +1,4 @@
-<img src="https://faq.jokenetwork.de/img/logo.svg" alt="Logo Alternative" width="100">
+<img src="https://faq.jokenetwork.de/img/logo_alt.svg" alt="Logo Alternative" width="100">
 
 ## About MetaTags
 
