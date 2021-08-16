@@ -1,6 +1,15 @@
-# JokeNetwork FAQ
-[![Codacy Security Scan](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml)
-[<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
+<p align="center">
+ <img width="100px" src="logo.svg" align="center" alt="JokeNetwork FAQ Logo">
+ <h1 align="center">JokeNetwork FAQ</h1>
+ <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
+    <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
+	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
+	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
+	<a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
+  </p>
 
 Welcome to JokeNetworks Documentation page 🥳
 
@@ -38,6 +47,7 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 
 ### Add extensions to the WHATWG Wiki
+<img width="100px" src="logo_alt.svg" align="center" alt="JokeNetwork FAQ Logo">
 
 If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!). 
 You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note that file-names are case-sensitive!**) for the documentation of your meta-tag (Only if you created them before).
