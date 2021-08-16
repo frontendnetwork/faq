@@ -4,7 +4,7 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 
 ## General information
 - [README](README)
-- [What are MetaExtensions?](About%20MetaExtensions)
-- [What is WHATWG?](About%20WHATWG)
+- [What are MetaTags & MetaExtensions?](MetaExtensions)
+- [What is WHATWG?](WHATWG)
 
 ## index
