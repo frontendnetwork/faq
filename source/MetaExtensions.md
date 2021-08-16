@@ -26,7 +26,7 @@ That means that
 - `<meta http-equiv="refresh" content="10">`
 - `<meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">`
 
-## `<code>`-Exmaple
+## `<code>`-Exmaple with a code-block
 <code>  
 <meta http-equiv="language" content="en">   
 <meta name="description" content="JokeNetworks FAQ">   
