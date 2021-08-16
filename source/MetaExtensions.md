@@ -10,9 +10,9 @@ Metadata can also be used to verify page-ownership, or to en- or disable certain
 Metadata is not displayed on the page itself, and is therefore not intended for the end-user, but is **machine parsable**.
 
 That means that
-- __**search engines**__, such as Google, use Metadata to gather additional information about a page,
--  __**browsers**__ use Metadata to know how to display content (or even reload the page / follow a redirection) and
--  __**other web services**__ use Metadata for a variety of purposes.
+- **search engines**, such as Google, use Metadata to gather additional information about a page,
+-  **browsers** use Metadata to know how to display content (or even reload the page / follow a redirection) and
+-  **other web services** use Metadata for a variety of purposes.
 
 ### Examples for MetaTags
 `<meta>`-tags can look anything like this in your `<head>` section:
