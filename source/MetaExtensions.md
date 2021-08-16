@@ -27,6 +27,7 @@ That means that
 - `<meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">`
 
 ## First example 
+
     <meta charset="UTF-8">
     <meta http-equiv="language" content="en">
     <meta name="description" content="JokeNetworks FAQ">
