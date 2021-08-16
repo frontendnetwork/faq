@@ -4,16 +4,11 @@
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
-    <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml">
-      <img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg">
-    </a>
-    <a href="https://github.com/jokenetwork/faq/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/jokenetwork/faq?color=0088ff">
-    </a>
+    <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
     <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
-    <a href="https://github.com/sponsors/philipbrembeck">
-      <img alt="Consider Sponsoring" width="80" src="https://faq.jokenetwork.de/css/sponsor.png">
-    </a>
+	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
+	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
+	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
   </p>
 
 Welcome to JokeNetworks Documentation page 🥳
