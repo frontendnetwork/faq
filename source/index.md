@@ -6,6 +6,8 @@ In our documentation anyone can find public docs ~~for our (deprecated) services
 
 ## General information
 - [README](README)
+- [What are MetaExtensions?](About MetaExtensions)
+- [What is WHATWG?](About WHATWG)
 
 ## index
 
