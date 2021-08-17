@@ -1,0 +1,353 @@
+/* 
+Addons to bootstrap v5.1.0 
+made to customize faq.jokenetwork.de
+*/
+
+/* Outgoing links */
+.content a[href^="https://"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "  \f360" !important
+}
+
+/* Outgoing reddit links */
+.content a[href^="http://www.reddit.com/"]:after {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "  \f1a1 ";
+    line-height: 1
+}
+
+/* Link styling */
+a,
+.link {
+    color: #428bca;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Code blocks */
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    white-space: pre-wrap;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 30px 0;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    white-space: pre-wrap;
+
+}
+
+pre code {
+    background: none !important;
+}
+
+
+/* Setting border-bottoms & cusotmizing bootstraps .mb-5 */
+h2,
+.border-bottom,
+.mb-5 {
+    border-bottom: 1px solid #dee2e6 !important;
+    padding-bottom: 5px;
+    margin-bottom: 1rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem !important;
+}
+
+/* GitHub flavored MD blockquote */
+blockquote {
+    border-left: .25em solid rgb(208, 215, 222);
+    color: rgb(87, 96, 106);
+    margin: 1rem 1rem 0 0;
+    padding: 0 1em;
+}
+
+/* Setting max-sizes for images, give them space arround */
+.content img {
+    padding: 1rem 0 1rem 0;
+    max-width: 30%;
+}
+
+/* customizing bootstrap btn-dark for "Sponsor"-button */
+.btn-dark {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #b2bec3;
+    font-size: 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+    color: #212529;
+    background-color: #dfe6e9;
+}
+
+.btn-dark:hover {
+    border: 1px solid #b2bec3;
+    color: #212529;
+    background-color: #e1eaed;
+}
+
+/* Minimal class for sponsor-buttons */
+.sponsor {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Dark-mode-switch icon */
+#darkmode:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f186 " !important
+}
+
+/* Giving list-items space, defining a maximum width (important for index!) */
+li {
+    padding-bottom: 5px;
+    max-width: 50%;
+}
+
+/* Customizing font-awesome */
+.fa-heart {
+    color: #f54278;
+}
+
+.fa-check-circle {
+    color: #55efc4;
+}
+
+.fa-times-circle {
+    color: #dc3545;
+}
+
+.fa-question-circle {
+    color: #6c757d;
+}
+
+/* Defining the anchor-link-styles */
+a .fa-link {
+    color: #000;
+}
+
+.fa-link {
+    font-size: 1rem;
+    opacity: 0;
+}
+
+h2:hover .fa-link {
+    opacity: 1;
+}
+
+/* Defining colors for badges */
+.bg-secondary {
+    background: none !important;
+    border: 1.5px solid #6c757d !important;
+    color: #6c757d;
+    font-weight: 400 !important;
+}
+
+.bg-danger {
+    background: none !important;
+    border: 1.5px solid #dc3545 !important;
+    color: #dc3545;
+    font-weight: 400 !important;
+}
+
+.bg-success {
+    background: none !important;
+    border: 1.5px solid #55efc4 !important;
+    color: #55efc4;
+    font-weight: 400 !important;
+}
+
+/* Add table styles since bootstrap only allows class="table" */
+table {
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    border-bottom-color: inherit;
+    border-left-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    border-bottom-color: inherit;
+    border-left-color: inherit;
+}
+
+table tr {
+    border-top: 1px solid rgb(33, 38, 45);
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    border-bottom-color: inherit;
+    border-left-color: inherit;
+}
+
+table td,
+table th {
+    border: 1px solid #30363d;
+    padding: 6px 13px;
+}
+
+/* Styles for the contributors-section */
+.contributors {
+    list-style: none;
+    padding-left: 0px !important;
+}
+
+.contribute {
+    padding-right: 10px;
+    font-size: .8rem;
+    display: inline
+}
+
+.contribute a {
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.contributor_card {
+    display: inline-block;
+    width: 180px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.contributor_card a[href^="https://"]:after {
+    content: "" !important
+}
+
+.contributor_image img {
+    float: left;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.contributor_contributions::before {
+    content: "\A";
+    white-space: pre;
+}
+
+/* Search bar */
+.search {
+    max-width: 40%;
+}
+
+/* Shorten breadcrumb if too long */
+.breadcrumb-item.active {
+    max-height: 1.3rem;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* Shorten page title if too long */
+.float-md-start {
+    width: 50%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+/* Styles on mobile */
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: block;
+    }
+
+    .nav-link {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .nav-link:nth-child(2) {
+        float: right;
+    }
+
+    .float-md-end {
+        padding-bottom: 1rem;
+    }
+
+    .sponsor {
+        display: none;
+    }
+
+    .contributors {
+        list-style: none;
+    }
+
+    .contribute {
+        display: list-item;
+        padding-right: 0px;
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    li {
+        max-width: 100%;
+    }
+
+    .fa-link {
+        opacity: 1;
+    }
+
+    .mb-5 {
+        margin-bottom: .5rem !important;
+    }
+
+    .float-md-start {
+        width: 90%;
+    }
+
+}
