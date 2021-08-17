@@ -44,7 +44,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
+	margin: 1.5em 0;
 	overflow: auto;
 }
 
@@ -70,14 +70,17 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-	color: #ccc;
+	color: #FFF;
 }
 
-.token.tag,
+.token.tag {
+	color: #7ee787;
+}
+
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: #ff2676;
+	color: #79c0ff;
 }
 
 .token.function-name {
@@ -110,7 +113,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: #7ec699;
+	color: #a5d6ff;
 }
 
 .token.operator,
