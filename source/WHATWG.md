@@ -18,6 +18,6 @@ Read more about the WHATWG on their [Wikipedia Page](https://en.wikipedia.org/wi
 <img src="https://faq.jokenetwork.de/img/logo_alt.svg" alt="Logo Alternative" width="100">
 
 ## WHATWG & JokeNetwork Docs
-The JokeNetwork Docs are not directly associated with the WHATWG, thus the members of JokeNetwork are also participants of the WHATWG.
+The JokeNetwork Docs are not directly associated with the WHATWG, even though the members of JokeNetwork are also participants of the WHATWG.
 
 The main goal of the JokeNetwork Docs is to provide documentation for the WHATWG Wiki, especially for the MetaExtensions-part, which you can [learn more about here](MetaExtensions#About-MetaExtensions).
