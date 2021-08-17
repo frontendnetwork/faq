@@ -1,3 +1,14 @@
+/* 
+
+Addons to bootstrap v5.1.0 
+made to customize faq.jokenetwork.de
+
+****
+If darkmode is switched on
+***
+
+*/
+
 [data-theme="dark"] {
     background: #121212;
     color: rgb(201, 209, 217);
@@ -9,7 +20,8 @@
     color: rgb(201, 209, 217);
 }
 
-[data-theme="dark"] a, .link {
+[data-theme="dark"] a,
+.link {
     color: rgb(88, 166, 255);
 }
 
@@ -31,12 +43,13 @@
     color: #FFF;
 }
 
-[data-theme="dark"] .mb-5{
-    border-bottom: 1px solid rgb(33, 38, 45)!important;
+[data-theme="dark"] .mb-5 {
+    border-bottom: 1px solid rgb(33, 38, 45) !important;
 }
 
-[data-theme="dark"] h2, .border-bottom{
-    border-bottom: 1px solid rgb(33, 38, 45)!important;
+[data-theme="dark"] h2,
+.border-bottom {
+    border-bottom: 1px solid rgb(33, 38, 45) !important;
 }
 
 
@@ -60,24 +73,24 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: " \f0eb " !important
-  }
+}
 
 [data-theme="dark"] .bg-secondary {
-color: rgb(201, 209, 217)!important;
+    color: rgb(201, 209, 217) !important;
 }
 
 [data-theme="dark"] a .fa-link {
-      color: rgb(201, 209, 217)!important;
-  }
+    color: rgb(201, 209, 217) !important;
+}
 
 [data-theme="dark"] .contribute a {
-  color: rgb(201, 209, 217);
+    color: rgb(201, 209, 217);
 }
 
 [data-theme="dark"] .form-text {
     margin-top: .25rem;
     font-size: .875em;
-    color:#212529
+    color: #212529
 }
 
 [data-theme="dark"] .form-control {
@@ -95,7 +108,7 @@ color: rgb(201, 209, 217)!important;
     -moz-appearance: none;
     appearance: none;
     border-radius: .25rem;
-    transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 [data-theme="dark"] .form-control:focus {
@@ -107,22 +120,23 @@ color: rgb(201, 209, 217)!important;
 }
 
 [data-theme="dark"] .form-control::-webkit-date-and-time-value {
-    height:1.5em
+    height: 1.5em
 }
 
 [data-theme="dark"] .form-control::-moz-placeholder {
     color: #FFF;
-    opacity:1
+    opacity: 1
 }
 
 [data-theme="dark"] .form-control::placeholder {
     color: #FFF;
-    opacity:1
+    opacity: 1
 }
 
-[data-theme="dark"] .form-control:disabled, .form-control[readonly] {
+[data-theme="dark"] .form-control:disabled,
+.form-control[readonly] {
     background-color: #e9ecef;
-    opacity:1
+    opacity: 1
 }
 
 [data-theme="dark"] .input-group-text {
@@ -137,7 +151,7 @@ color: rgb(201, 209, 217)!important;
     white-space: nowrap;
     background-color: #576574;
     border: 1px solid #576574;
-    border-radius:.25rem
+    border-radius: .25rem
 }
 
 [data-theme="dark"] .input-group {
@@ -145,58 +159,68 @@ color: rgb(201, 209, 217)!important;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width:100%
+    width: 100%
 }
 
-[data-theme="dark"] .input-group > .form-control, .input-group > .form-select {
+[data-theme="dark"] .input-group>.form-control,
+.input-group>.form-select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
-    min-width:0
+    min-width: 0
 }
 
-[data-theme="dark"] .input-group > .form-control:focus, .input-group > .form-select:focus {
-    z-index:3
+[data-theme="dark"] .input-group>.form-control:focus,
+.input-group>.form-select:focus {
+    z-index: 3
 }
 
 [data-theme="dark"] .input-group .btn {
     position: relative;
-    z-index:2
+    z-index: 2
 }
 
 [data-theme="dark"] .input-group .btn:focus {
-    z-index:3
+    z-index: 3
 }
 
-[data-theme="dark"] .input-group-lg > .btn, .input-group-lg > .form-control, .input-group-lg > .form-select, .input-group-lg > .input-group-text {
+[data-theme="dark"] .input-group-lg>.btn,
+.input-group-lg>.form-control,
+.input-group-lg>.form-select,
+.input-group-lg>.input-group-text {
     padding: .5rem 1rem;
     font-size: 1.25rem;
-    border-radius:.3rem
+    border-radius: .3rem
 }
 
-[data-theme="dark"] .input-group-sm > .btn, .input-group-sm > .form-control, .input-group-sm > .form-select, .input-group-sm > .input-group-text {
+[data-theme="dark"] .input-group-sm>.btn,
+.input-group-sm>.form-control,
+.input-group-sm>.form-select,
+.input-group-sm>.input-group-text {
     padding: .25rem .5rem;
     font-size: .875rem;
-    border-radius:.2rem
+    border-radius: .2rem
 }
 
-[data-theme="dark"] .input-group-lg > .form-select, .input-group-sm > .form-select {
-    padding-right:3rem
+[data-theme="dark"] .input-group-lg>.form-select,
+.input-group-sm>.form-select {
+    padding-right: 3rem
 }
 
-[data-theme="dark"] .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3), .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+[data-theme="dark"] .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
     border-top-right-radius: 0;
-    border-bottom-right-radius:0
+    border-bottom-right-radius: 0
 }
 
-[data-theme="dark"] .input-group.has-validation > .dropdown-toggle:nth-last-child(n + 4), .input-group.has-validation > :nth-last-child(n + 3):not(.dropdown-toggle):not(.dropdown-menu) {
+[data-theme="dark"] .input-group.has-validation>.dropdown-toggle:nth-last-child(n + 4),
+.input-group.has-validation> :nth-last-child(n + 3):not(.dropdown-toggle):not(.dropdown-menu) {
     border-top-right-radius: 0;
-    border-bottom-right-radius:0
+    border-bottom-right-radius: 0
 }
 
-[data-theme="dark"] .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+[data-theme="dark"] .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     margin-left: -1px;
     border-top-left-radius: 0;
-    border-bottom-left-radius:0
+    border-bottom-left-radius: 0
 }
-
