@@ -49,11 +49,14 @@
 
 
   h2,
-  .border-bottom,
-  .mb-5 {
+  .border-bottom, .mb-5 {
       border-bottom: 1px solid #dee2e6 !important;
       padding-bottom: 5px;
       margin-bottom: 1rem!important;
+  }
+
+  .mb-5  {
+    margin-bottom:  2.5rem!important;
   }
 
   blockquote {
