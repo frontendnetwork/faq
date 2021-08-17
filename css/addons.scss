@@ -57,7 +57,6 @@ pre code {
     background: none !important;
 }
 
-
 /* Setting border-bottoms & cusotmizing bootstraps .mb-5 */
 h2,
 .border-bottom,
@@ -93,12 +92,10 @@ blockquote {
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
     border: 1px solid #b2bec3;
-    font-size: 1rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     cursor: pointer;
     padding: .25rem .5rem;
@@ -234,7 +231,7 @@ table th {
 /* Styles for the contributors-section */
 .contributors {
     list-style: none;
-    padding-left: 0px !important;
+    padding-left: 0 !important;
 }
 
 .contribute {
@@ -327,7 +324,7 @@ table th {
 
     .contribute {
         display: list-item;
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .search {
@@ -349,5 +346,4 @@ table th {
     .float-md-start {
         width: 90%;
     }
-
 }

@@ -14,7 +14,6 @@ If darkmode is switched on
     color: rgb(201, 209, 217);
 }
 
-
 [data-theme="dark"] body {
     background: #121212;
     color: rgb(201, 209, 217);
@@ -35,7 +34,7 @@ If darkmode is switched on
 [data-theme="dark"] pre {
     color: #FFF;
     background-color: #222f3e;
-    border: 0px solid !important;
+    border: 0 solid !important;
 }
 
 [data-theme="dark"] code {
@@ -116,7 +115,7 @@ If darkmode is switched on
     background-color: #2c3e50;
     outline: none !important;
     border-color: #719ECE;
-    box-shadow: 0 0 0px #719ECE;
+    box-shadow: 0 0 0 #719ECE;
 }
 
 [data-theme="dark"] .form-control::-webkit-date-and-time-value {
