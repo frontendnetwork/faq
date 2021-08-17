@@ -6,7 +6,7 @@ This does not work anymore, as there is no status-bar in iOS 10 and above, and i
 
 Read more about Apple's Webapps at [Apple's official documentation](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html).
 
-## Usage:
+## Usage
 
 ````html
 <meta name="apple-mobile-web-app-status-bar-style" content="black">

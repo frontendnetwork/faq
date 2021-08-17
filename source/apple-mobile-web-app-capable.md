@@ -6,7 +6,7 @@ Apparently this does not work anymore and is therefor marked as <span class="bad
 
 Read more about Apple's Webapps at [Apple's official documentation](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html).
 
-## Usage:
+## Usage
 
 ````html
 <meta name="apple-mobile-web-app-capable" content="yes">

@@ -3,12 +3,11 @@ Is used to to define the uri to the license, under which a website is published.
 
 **Please note:** Only use `license:uri` if the license you are willing to use is not already listed as a `content`-possibility in [`license`](license).
 
-## Usage: 
+## Usage
 
 ````html
 <meta name="license:uri" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 ````
-
 
 License URIs for `content` may be:
 	
