@@ -205,7 +205,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <link href="css/addons.css" rel="stylesheet">
             <link href="css/darkmode.css" rel="stylesheet">
 
-            <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+            <script defer src="js/alpine.min.js"></script>
         </head>
 
         <body data-theme="dark">
