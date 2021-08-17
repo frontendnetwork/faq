@@ -29,46 +29,51 @@ if (substr($CurPageURL,-3) == ".md") {
     $CurPageURL = substr($CurPageURL, 0,-3);
 }
 
+// Check if index-page
+if (empty($CurPageURL) or $CurPageURL == ".%E2%80%8A."){
+    $CurPageURL = "index";
+}
+
+ // Include parsedown and initialize parsing the markdown file
+include 'Parsedown.php';
+$file = basename($CurPageURL);
+$content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
+$Parsedown = new Parsedown();
+$Parsedown->setBreaksEnabled(true);
+$con = $Parsedown->text($content);
+
+// Add links and ids to h2 headers automatically 
+function add_ids_to_header_tags( $con ) {
+$pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
+if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
+$find = array();
+$replace = array();
+foreach( $matches as $match ) {
+    if ( strlen( $match['tag_extra'] ) && false !== stripos( $match['tag_extra'], 'id=' ) ) {
+    continue;
+    }
+    $find[]    = $match['full_tag'];
+    $id        = sanitize_title( $match['tag_contents'] );
+    $id_attr   = sprintf( ' id="%s"', $id );
+    $replace[] = sprintf( '<%1$s%2$s%3$s>%4$s <a href="#'.$id.'" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
+    }
+        $con = str_replace( $find, $replace, $con );
+        }
+        return $con;
+    }
+
+// Replace empty space with "-" for links 
+function sanitize_title($title) {
+    return str_replace(" ", "-", $title);
+}
+
     // docs-pages
     // Check if requested file exists
-    if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
+    if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') !== "404: Not Found" && !empty($CurPageURL) && $CurPageURL !== "index" && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))) {
         
 
         // Send HTTP Response Code "200 - OK"
         http_response_code(200);
-
-        // Include parsedown and initialize parsing the markdown file
-        include 'Parsedown.php';
-        $file = basename($CurPageURL);
-        $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
-        $Parsedown = new Parsedown();
-        $Parsedown->setBreaksEnabled(true);
-        $con = $Parsedown->text($content);
-
-         // Add links and ids to h2 headers automatically 
-        function add_ids_to_header_tags( $con ) {
-            $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
-            if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
-                $find = array();
-                $replace = array();
-                foreach( $matches as $match ) {
-                    if ( strlen( $match['tag_extra'] ) && false !== stripos( $match['tag_extra'], 'id=' ) ) {
-                        continue;
-                    }
-                    $find[]    = $match['full_tag'];
-                    $id        = sanitize_title( $match['tag_contents'] );
-                    $id_attr   = sprintf( ' id="%s"', $id );
-                    $replace[] = sprintf( '<%1$s%2$s%3$s>%4$s <a href="#'.$id.'" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
-                }
-                $con = str_replace( $find, $replace, $con );
-            }
-            return $con;
-        }
-
-        // Replace empty space with "-" for links 
-        function sanitize_title($title) {
-            return str_replace(" ", "-", $title);
-        }
 
         // Check if filename is longer than 11 characters, shorten if true
         $fileshort = strlen($file) > 18 ? substr($file,0,18)."..." : $file;
@@ -145,43 +150,10 @@ if (substr($CurPageURL,-3) == ".md") {
 
     // index-page
     // Check if URI is empty and therefore refer to index-page
-    elseif (empty($CurPageURL) or $CurPageURL == ".%E2%80%8A.") {
+    elseif ($CurPageURL == "index") {
 
         // Send HTTP Response Code "200 - OK"
         http_response_code(200);
-
-        // Include parsedown and initialize parsing the markdown file
-        include 'Parsedown.php';
-        $file = basename(index);
-        $content = file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$file.'.md');
-        $Parsedown = new Parsedown();
-        $Parsedown->setBreaksEnabled(true);
-        $con = $Parsedown->text($content);
-
-         // Add links and ids to h2 headers automatically 
-        function add_ids_to_header_tags( $con ) {
-            $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
-            if ( preg_match_all( $pattern, $con, $matches, PREG_SET_ORDER ) ) {
-                $find = array();
-                $replace = array();
-                foreach( $matches as $match ) {
-                    if ( strlen( $match['tag_extra'] ) && false !== stripos( $match['tag_extra'], 'id=' ) ) {
-                        continue;
-                    }
-                    $find[]    = $match['full_tag'];
-                    $id        = sanitize_title( $match['tag_contents'] );
-                    $id_attr   = sprintf( ' id="%s"', $id );
-                    $replace[] = sprintf( '<%1$s%2$s%3$s>%4$s <a href="#'.$id.'" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
-                }
-                $con = str_replace( $find, $replace, $con );
-            }
-            return $con;
-        }
-
-        // Replace empty space with "-" for links 
-        function sanitize_title($title) {
-            return str_replace(" ", "-", $title);
-        }
 
         // Render the page
         echo '<!DOCTYPE html>
