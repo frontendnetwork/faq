@@ -60,19 +60,19 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 ### File Structure
 
-  index.php
-  Parsedown.php/
-  README.md
-  ├── source/
-  │   ├── apple-mobile-web-app-title.md
-  │   ├── bitcoin.md
-  │   ├── Blazerr.md
-  │   ├── index.md
-  │   ├── license:uri.md
-  │   ├── license.md
-  │   ├── README.md
-  │   └── start.md
-  └── css 
+    index.php
+    Parsedown.php/
+    README.md
+    ├── source/
+    │   ├── apple-mobile-web-app-title.md
+    │   ├── bitcoin.md
+    │   ├── Blazerr.md
+    │   ├── index.md
+    │   ├── license:uri.md
+    │   ├── license.md
+    │   ├── README.md
+    │   └── start.md
+    └── css 
 
 
 ## Credits 
