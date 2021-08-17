@@ -5,14 +5,14 @@ Annotated
 */
 
 /* Outgoing links */
-.content a[href^="https://"]:after {
+.content a[href^="https://"]::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "  \f360" !important
 }
 
 /* Outgoing reddit links */
-.content a[href^="http://www.reddit.com/"]:after {
+.content a[href^="http://www.reddit.com/"]::after {
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
     content: "  \f1a1 ";
@@ -122,7 +122,7 @@ blockquote {
 }
 
 /* Dark-mode-switch icon */
-#darkmode:after {
+#darkmode::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: " \f186 " !important
@@ -257,7 +257,7 @@ table th {
     padding-bottom: 10px;
 }
 
-.contributor_card a[href^="https://"]:after {
+.contributor_card a[href^="https://"]::after {
     content: "" !important
 }
 

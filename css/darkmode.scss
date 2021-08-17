@@ -69,7 +69,7 @@ If darkmode is switched on
     background-color: #1c1f23;
 }
 
-[data-theme="dark"] #darkmode:after {
+[data-theme="dark"] #darkmode::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: " \f0eb " !important
