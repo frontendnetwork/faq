@@ -87,10 +87,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
             <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
 
-            <link href="css/bootstrap.min.css" rel="stylesheet">
-            <link href="css/fa/all.min.css" rel="stylesheet">
-            <link href="css/addons.css" rel="stylesheet">
-            <link href="css/darkmode.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
 
         </head>
 
@@ -200,10 +197,7 @@ if (substr($CurPageURL,-3) == ".md") {
             <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
             <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
 
-            <link href="css/bootstrap.min.css" rel="stylesheet">
-            <link href="css/fa/all.min.css" rel="stylesheet">
-            <link href="css/addons.css" rel="stylesheet">
-            <link href="css/darkmode.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
 
             <script defer src="js/alpine.min.js"></script>
         </head>
@@ -291,21 +285,11 @@ if (substr($CurPageURL,-3) == ".md") {
     // Check if requested file exists
     elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md') == "404: Not Found" or empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/'.$CurPageURL.'.md'))){
 
-          if($_GET['code'] == "404"){
-            $error = "No such file"; 
+            $error = "404 - No such file"; 
 
             // Send HTTP Response Code "404 - Not found"
             http_response_code(404);
-        }
-          elseif ($_GET['code'] == "403"){
-            $error = "Access failed";
-
-            // Send HTTP Response Code "403 - Access denied"
-            http_response_code(403);
-        }
-          else {
-            $error = "Error";
-        }
+       
 
         // Check if filename is longer than 8 or 5 chars, if so, shorten
         $fileshort = strlen($CurPageURL) > 11 ? substr($CurPageURL,0,11)."..." : $CurPageURL;
@@ -319,16 +303,14 @@ if (substr($CurPageURL,-3) == ".md") {
             <title>MetaTag Docs » '.$error.'</title>
             <meta name="description" content="Documentation for MetaTags in HTML">
             <meta name="viewport" content="width=device-width">
-            <link href="css/bootstrap.min.css" rel="stylesheet">
-            <link href="css/fa/all.min.css" rel="stylesheet">
-            <link href="css/addons.css" rel="stylesheet">
-            <link href="css/darkmode.css" rel="stylesheet">
+
+            <link href="css/style.css" rel="stylesheet">
         </head>
 
         <body data-theme="dark">
             <div class="col-lg-8 mx-auto p-3 py-md-5">
             <header class="mb-5">
-              <h1 class="float-md-start">Error code '.$_GET['code'].'</h1>
+              <h1 class="float-md-start">Error code '.$error.'</h1>
               <nav class="nav justify-content-center float-md-end">
                 <a class="nav-link" href="https://github.com/JokeNetwork/faq/new/main/source"><i class="fab fa-github"></i> Create on GitHub</a>
                 <div class="nav-link">
@@ -348,7 +330,7 @@ if (substr($CurPageURL,-3) == ".md") {
             </header>
             <main class="pb-5 content">
                     <h3>'.$filemid.': '.$error.'</h3>
-                    Go to <a href="index">index</a> for an overview.
+                    Go to <a href="//faq.jokenetwork.de">index</a> for an overview.
                 </main>
                  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
                         <p class="col-md-4 mb-0 text-muted">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a></p>
