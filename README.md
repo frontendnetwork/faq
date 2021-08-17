@@ -5,11 +5,13 @@
 </p>
   <p align="center">
     <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
+<a href="https://github.com/marketplace/actions/super-linter"><img alt="GitHub Super-Linter" src="https://github.com/jokenetwork/faq/workflows/Lint%20Code%20Base/badge.svg"></a>
     <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
 	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
 	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
 	<a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
   </p>
+
 
 Welcome to JokeNetworks Documentation page 🥳
 
