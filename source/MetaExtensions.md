@@ -28,9 +28,8 @@ That means that
 <meta http-equiv="refresh" content="10">
 <meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
 
-```
-
-    
+````
+   
 ### Using MetaTags for SEO
 Some `<meta>`-tags are relevant for search engine optimazation. 
 
