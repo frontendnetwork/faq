@@ -16,7 +16,6 @@
 
 Welcome to JokeNetworks Documentation page 🥳
 
-
 Here you can find and contribute to the source-code of our documentation-page, which is publicly available at https://faq.jokenetwork.de.
 
 ## What is this about?
