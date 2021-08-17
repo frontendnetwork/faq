@@ -12,6 +12,7 @@ Read more about Apple's Webapps at [Apple's official documentation](https://deve
 <meta name="apple-mobile-web-app-capable" content="yes">
 ````
 
+
 `content` can also be `false`, but the meta-tag is obsolete then.
 
 ## W3

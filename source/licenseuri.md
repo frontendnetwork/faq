@@ -9,6 +9,7 @@ Is used to to define the uri to the license, under which a website is published.
 <meta name="license:uri" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 ````
 
+
 License URIs for `content` may be:
 	
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)

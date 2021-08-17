@@ -12,6 +12,7 @@ Read more about Apple's iOS meta-tags at [Apple's official documentation](https:
 <meta name="format-detection" content="telephone=no">
 ````
 
+
 `content` can also be `telephone=yes`, but the meta-tag is obsolete then, since the browser does this automatically.
 
 ## W3

@@ -12,6 +12,7 @@ Read more about Apple's Webapps at [Apple's official documentation](https://deve
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 ````
 
+
 Variables for `content`:
 - `default`
 - `black`

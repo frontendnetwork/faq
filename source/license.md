@@ -7,6 +7,7 @@ Is used to to define the license under which a website is published.
 <meta name="license" content="C-BY-NC-SA-4.0">
 ````
 
+
 `content` may be:
 
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
