@@ -64,14 +64,7 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 	Parsedown.php/
 	README.md
 	├── source/
-	│   ├── apple-mobile-web-app-title.md
-	│   ├── bitcoin.md
-	│   ├── Blazerr.md
-	│   ├── index.md
-	│   ├── license:uri.md
-	│   ├── license.md
-	│   ├── README.md
-	│   └── start.md
+	│   └── [sourcfiles].md
 	└── css 
 
 
@@ -79,8 +72,10 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 This repo uses:
 
- -  [Bootstrap v3.0.3](https://getbootstrap.com)
+ -  [Bootstrap v3.0.3](https://getbootstrap.com) 
  -  [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
+ -  [alpine.js](https://alpinejs.dev)
+ -  [Prism.js](https://prismjs.com)
  -  [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
 
 ## License
