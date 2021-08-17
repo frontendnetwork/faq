@@ -4,18 +4,18 @@
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
-  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
-  <a href="https://codeclimate.com/github/philipbrembeck/faq/maintainability"><img src="https://api.codeclimate.com/v1/badges/6dfed2f970b3772a51a7/maintainability" /></a>
+	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
+	<a href="https://codeclimate.com/github/philipbrembeck/faq/maintainability"><img src="https://api.codeclimate.com/v1/badges/6dfed2f970b3772a51a7/maintainability" /></a>
+	<a href="https://www.codacy.com/gh/JokeNetwork/faq/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JokeNetwork/faq&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/289e5f20012c427283981741b1402da9" alt="Codacy Badge"></a>
     <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
     <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
-  <a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
-  <a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
+	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
+	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
+	<a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
   </p>
 
 
 Welcome to JokeNetworks Documentation page 🥳
-
 
 Here you can find and contribute to the source-code of our documentation-page, which is publicly available at https://faq.jokenetwork.de.
 
@@ -44,8 +44,8 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 **Anyone can:**
 
-- Create a new page (source/ → new file → .md file)
-- Edit files
+-  Create a new page (source/ → new file → .md file)
+-  Edit files
 > Please don't open issues but instead directly make a Pull Request with your edits/new creations.
 
 
@@ -60,30 +60,23 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 ### File Structure
 
-````html
-    index.php
-    Parsedown.php/
-    README.md
-    ├── source/
-    │   ├── apple-mobile-web-app-title.md
-    │   ├── bitcoin.md
-    │   ├── Blazerr.md
-    │   ├── index.md
-    │   ├── license:uri.md
-    │   ├── license.md
-    │   ├── README.md
-    │   └── start.md
-    └── css 
-````
+	index.php
+	Parsedown.php/
+	README.md
+	├── source/
+	│   └── [sourcfiles].md
+	└── css 
 
 
 ## Credits 
 
 This repo uses:
 
- - [Bootstrap v3.0.3](https://getbootstrap.com)
- - [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
- - [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
+ -  [Bootstrap v3.0.3](https://getbootstrap.com) 
+ -  [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
+ -  [alpine.js](https://alpinejs.dev)
+ -  [Prism.js](https://prismjs.com)
+ -  [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
 
 ## License
 
