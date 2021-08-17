@@ -8,7 +8,9 @@ Read more about Apple's Webapps at [Apple's official documentation](https://deve
 
 ## Usage:
 
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+````html
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+````
 
 Variables for `content`:
 - `default`

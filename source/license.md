@@ -3,7 +3,9 @@ Is used to to define the license under which a website is published.
 
 ## Usage: 
 
-	<meta name="license" content="C-BY-NC-SA-4.0">
+````html
+<meta name="license" content="C-BY-NC-SA-4.0">
+````
 
 `content` may be:
 

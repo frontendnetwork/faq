@@ -8,7 +8,9 @@ Read more about Apple's Webapps at [Apple's official documentation](https://deve
 
 ## Usage:
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
+````html
+<meta name="apple-mobile-web-app-capable" content="yes">
+````
 
 `content` can also be `false`, but the meta-tag is obsolete then.
 

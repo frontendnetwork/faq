@@ -5,7 +5,9 @@ Is used to to define the uri to the license, under which a website is published.
 
 ## Usage: 
 
-	<meta name="license:uri" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+````html
+<meta name="license:uri" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+````
 
 License URIs for `content` may be:
 	
