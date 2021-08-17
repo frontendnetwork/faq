@@ -5,6 +5,7 @@
 </p>
   <p align="center">
 	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
+	<a href="https://codeclimate.com/github/philipbrembeck/faq/maintainability"><img src="https://api.codeclimate.com/v1/badges/6dfed2f970b3772a51a7/maintainability" /></a>
     <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
     <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
 	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
