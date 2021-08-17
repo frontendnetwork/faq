@@ -14,6 +14,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
     --attr-name: #0550ae;
     --function-name: #6196cc;
     --attr-value: #0a3069;
+    --standard: #000;
 }
 
 :root [data-theme='light'] {
@@ -24,16 +25,18 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
     --attr-name: #0550ae;
     --function-name: #6196cc;
     --attr-value: #0a3069;
+    --standard: #000;
 }
 
 :root [data-theme='dark'] {
-    --pre-background: #222f3e;
+    --pre-background: #0f0f0f;
     --pre-main-color: #FFF;
     --punctuation: #FFF;
     --tag: #7ee787;
     --attr-name: #79c0ff;
     --function-name: #6196cc;
     --attr-value: #a5d6ff;
+    --standard: #ccc;
 }
 
  code:focus, pre:focus {
@@ -50,7 +53,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
+	color: var(--standard);
 	background: none;
 	font-family: var(--bs-font-monospace);
 	font-size: 13px;
