@@ -133,6 +133,7 @@ function sanitize_title($title) {
                     </footer>
                     </div>
                     
+                    <script src="js/prism.js"></script>
                     <script src="js/dark-mode-switch.min.js"></script>';
 
                     // Analytics & Cookie, ignore
