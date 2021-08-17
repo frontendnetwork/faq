@@ -21,8 +21,6 @@ Here you can find and contribute to the source-code of our documentation-page, w
 
 ## What is this about?
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/91ad624186f041a985d53c2ff9b43009)](https://app.codacy.com/gh/JokeNetwork/faq?utm_source=github.com&utm_medium=referral&utm_content=JokeNetwork/faq&utm_campaign=Badge_Grade_Settings)
-
 In our documentation anyone can find public ~~docs for our (deprecated) services (which aren't important for that matter) and also~~ **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG](https://wiki.whatwg.org/wiki/MetaExtensions)).
 
 The "faq" page with questions answered, that weren't asked frequently, was created in January 2014, when [@philipbrembeck](https://github.com/philipbrembeck) was in need of creating a new HTML MetaExtension, which would not be marked as an error in the W3 Validator.
