@@ -10,6 +10,15 @@ require_once '/home/jake//vendor/autoload.php';
 require_once 'credentials.php';
 $client = new \Github\Client();
 $client->authenticate($user, $secret, Github\Client::AUTH_CLIENT_ID);
+$releases = $client->api('repo')->releases()->all('jokenetwork', 'faq');
+$gitversion = $releases[0]['tag_name'];
+
+if ($version == $gitversion) {
+    $versionbadge = '<span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>';
+}
+else {
+    $versionbadge = '<span class="badge rounded-pill bg-danger">Conflict: Git: '.$gitversion.' <i class="far fa-times-circle"></i></span> <span class="badge rounded-pill bg-secondary">Conflict: Server '.$version.' <i class="far fa-question-circle"></i></span>';
+}
 
 // Server URI
 $CurPageURL = $_SERVER['REQUEST_URI'];  
@@ -102,7 +111,7 @@ if (substr($CurPageURL,-3) == ".md") {
             </header>
             <main class="content">
                     '.add_ids_to_header_tags( $con ).'
-                    <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
+                    '.$versionbadge.'
                 </main>
                 <footer class="pt-3 my-4 text-muted border-top fs-6">
                     <p class="float-start fs-6">
@@ -239,13 +248,13 @@ if (substr($CurPageURL,-3) == ".md") {
 
             // Load contributors from GitHub
             $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
-            array_walk($contributors, function($data) { print '<li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/'.$data['login'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/'.$data['login'].'">'.$data['login'].'</a></span><span class="contributor_contributions">'.$data['contributions'].' Contributions</span></div></div></li>'; });
+            array_walk($contributors, function($data) { print '<li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="'.$data['html_url'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a></div><div class="contributor_info"><span class="contributor_name"><a href="'.$data['html_url'].'">'.$data['login'].'</a></span><span class="contributor_contributions">'.$data['contributions'].' Contributions</span></div></div></li>'; });
             echo'
             <li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?s=200&v=4" alt="WHATWG"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/WHATWG">WHATWG</a></span><span class="contributor_contributions">Contributing</span></div></div></li>
 
             </ul>
             <p>Want to get added to this list? <a href="README.md#Contribute">Learn how to contribute</a>.</p>
-            <span class="badge rounded-pill bg-success">Up to date: '.$version.' <i class="far fa-check-circle"></i></span>
+            '.$versionbadge.'
                 </main>
                 <footer class="pt-3 my-4 text-muted border-top fs-6">
                     <p class="float-start fs-6">
