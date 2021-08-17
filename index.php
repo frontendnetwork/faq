@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.2.9";
+$version = "v2.3.0";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
@@ -71,7 +71,7 @@ if (substr($CurPageURL,-3) == ".md") {
         }
 
         // Check if filename is longer than 11 characters, shorten if true
-        $fileshort = strlen($file) > 11 ? substr($file,0,11)."..." : $file;
+        $fileshort = strlen($file) > 18 ? substr($file,0,18)."..." : $file;
 
         // Render the page
         echo '<!DOCTYPE html>
@@ -97,7 +97,7 @@ if (substr($CurPageURL,-3) == ".md") {
         <body data-theme="dark">
             <div class="col-lg-8 mx-auto p-3 py-md-5">
             <header class="mb-5">
-              <h1 class="float-md-start"><a href="/">Docs</a> » '.$fileshort.'</h1>
+              <h1 class="float-md-start">'.$fileshort.'</h1>
               <nav class="nav justify-content-center float-md-end">
                 <a class="nav-link" href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                 <div class="nav-link">
@@ -108,38 +108,41 @@ if (substr($CurPageURL,-3) == ".md") {
                 </div>
               </nav>
               <div style="clear:both"></div>
+              <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb" style="white-space: nowrap; overflow: hidden; margin-bottom: 0px;">
+                        <li class="breadcrumb-item"><a href="/">Docs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">'.$file.'</li>
+                      </ol>
+                    </nav>
             </header>
-            <main class="content">
+            <main class="pb-5 content">
+
                     '.add_ids_to_header_tags( $con ).'
                     '.$versionbadge.'
                 </main>
-                <footer class="pt-3 my-4 text-muted border-top fs-6">
-                    <p class="float-start fs-6">
-                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a> ›</span>
-                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$file.'" itemprop="url"><span itemprop="title">'.$fileshort.'</span></a></span>
-                         / 
-                        <a href="privacy-policy">Privacy Policy</a>
-                    </p>
-                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a>
-                    </p>
-
-                    <div class="sponsor">
-                     <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                        <p class="col-md-4 mb-0 text-muted">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a></p>
+                        <span class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                          <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark sponsor" role="button"><i class="far fa-heart"></i> Sponsor</a>
+                        </span>
+                        <ul class="nav col-md-4 justify-content-end">
+                          <li class="nav-item"><a href="privacy-policy" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                        </ul>
+                    </footer>
                     </div>
-                </footer>
-            </div>
-            <script src="js/dark-mode-switch.min.js"></script>';
+                    
+                    <script src="js/dark-mode-switch.min.js"></script>';
 
-            // Analytics & Cookie, ignore
-            header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de'); 
-                if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}  
-                elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';}  
-                else{echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} 
+                    // Analytics & Cookie, ignore
+                    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de'); 
+                    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}  
+                    elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No"){echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';}  
+                    else{echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} 
 
-        echo'
-        </body>
+                echo'
+                    </body>
 
-        </html>';
+                    </html>';
 
     } 
 
@@ -219,8 +222,13 @@ if (substr($CurPageURL,-3) == ".md") {
                 </div>
               </nav>
               <div style="clear:both"></div>
+               <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb" style="white-space: nowrap; overflow: hidden; margin-bottom: 0px;">
+                        <li class="breadcrumb-item active">Docs</li>
+                      </ol>
+                    </nav>
             </header>
-            <main class="content">
+            <main class="pb-5 content">
             '.add_ids_to_header_tags( $con );
 
             // Render a "index of"-style ul-menu, using GitHub as a source 
@@ -250,26 +258,21 @@ if (substr($CurPageURL,-3) == ".md") {
             $contributors = $client->api('repo')->contributors('JokeNetwork', 'faq');
             array_walk($contributors, function($data) { print '<li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="'.$data['html_url'].'"><img src="'.$data['avatar_url'].'" alt="'.$data['login'].'"></a></div><div class="contributor_info"><span class="contributor_name"><a href="'.$data['html_url'].'">'.$data['login'].'</a></span><span class="contributor_contributions">'.$data['contributions'].' Contributions</span></div></div></li>'; });
             echo'
-            <li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?s=200&v=4" alt="WHATWG"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/WHATWG">WHATWG</a></span><span class="contributor_contributions">Contributing</span></div></div></li>
+            <li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?v=4" alt="WHATWG"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/WHATWG">WHATWG</a></span><span class="contributor_contributions">Contributing</span></div></div></li>
 
             </ul>
             <p>Want to get added to this list? <a href="README.md#Contribute">Learn how to contribute</a>.</p>
             '.$versionbadge.'
                 </main>
-                <footer class="pt-3 my-4 text-muted border-top fs-6">
-                    <p class="float-start fs-6">
-                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a></span>
-                            / 
-                        <a href="privacy-policy">Privacy Policy</a>
-                    </p>
-
-                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a>
-                    </p>
-
-                    <div class="sponsor">
-                     <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
-                    </div>
-                </footer>
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                        <p class="col-md-4 mb-0 text-muted">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a></p>
+                        <span class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                          <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark sponsor" role="button"><i class="far fa-heart"></i> Sponsor</a>
+                        </span>
+                        <ul class="nav col-md-4 justify-content-end">
+                          <li class="nav-item"><a href="privacy-policy" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                        </ul>
+                    </footer>
             </div>
             <script src="js/dark-mode-switch.min.js"></script>';
 
@@ -305,8 +308,8 @@ if (substr($CurPageURL,-3) == ".md") {
         }
 
         // Check if filename is longer than 8 or 5 chars, if so, shorten
-        $fileshort = strlen($CurPageURL) > 8 ? substr($CurPageURL,0,11)."..." : $CurPageURL;
-        $filemid = strlen($CurPageURL) > 5 ? substr($CurPageURL,0,15)."..." : $CurPageURL;
+        $fileshort = strlen($CurPageURL) > 11 ? substr($CurPageURL,0,11)."..." : $CurPageURL;
+        $filemid = strlen($CurPageURL) > 15 ? substr($CurPageURL,0,15)."..." : $CurPageURL;
 
         echo '<!DOCTYPE html>
         <html lang="en">
@@ -325,9 +328,9 @@ if (substr($CurPageURL,-3) == ".md") {
         <body data-theme="dark">
             <div class="col-lg-8 mx-auto p-3 py-md-5">
             <header class="mb-5">
-              <h1 class="float-md-start"><a href="/">Docs</a> » Error code '.$_GET['code'].'</h1>
+              <h1 class="float-md-start">Error code '.$_GET['code'].'</h1>
               <nav class="nav justify-content-center float-md-end">
-                <a class="nav-link" href="https://github.com/JokeNetwork/faq/blob/main/source/"><i class="fab fa-github"></i> Create on GitHub</a>
+                <a class="nav-link" href="https://github.com/JokeNetwork/faq/new/main/source"><i class="fab fa-github"></i> Create on GitHub</a>
                 <div class="nav-link">
                   <div class="form-check form-switch">
                     <input type="checkbox" class="form-check-input" id="darkSwitch">
@@ -336,25 +339,26 @@ if (substr($CurPageURL,-3) == ".md") {
                 </div>
               </nav>
               <div style="clear:both"></div>
+               <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb" style="white-space: nowrap; overflow: hidden; margin-bottom: 0px;">
+                        <li class="breadcrumb-item"><a href="/">Docs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">'.$filemid.'</li>
+                      </ol>
+                </nav>
             </header>
-            <main class="content">
+            <main class="pb-5 content">
                     <h3>'.$filemid.': '.$error.'</h3>
                     Go to <a href="index">index</a> for an overview.
                 </main>
-                <footer class="pt-3 my-4 text-muted border-top fs-6">
-                    <p class="float-start fs-6">
-                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de" itemprop="url"><span itemprop="title">Docs</span></a> ›</span>
-                        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://faq.jokenetwork.de/'.$CurPageURL.'" itemprop="url"><span itemprop="title">'.$fileshort.'</span></a></span>
-                         / 
-                        <a href="privacy-policy">Privacy Policy</a>
-                    </p>
-                    <p class="float-end fs-6">Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> C-BY-NC-SA 4.0</a>
-                    </p>
-
-                    <div class="sponsor">
-                     <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark" role="button"><i class="far fa-heart"></i> Consider Sponsoring</a>
-                    </div>
-                </footer>
+                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                        <p class="col-md-4 mb-0 text-muted">Licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> CC-BY 4.0</a></p>
+                        <span class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                          <a href="//github.com/sponsors/philipbrembeck/" class="btn-dark sponsor" role="button"><i class="far fa-heart"></i> Sponsor</a>
+                        </span>
+                        <ul class="nav col-md-4 justify-content-end">
+                          <li class="nav-item"><a href="privacy-policy" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                        </ul>
+                    </footer>
             </div>
             <script src="js/dark-mode-switch.min.js"></script>';
 
