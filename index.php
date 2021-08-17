@@ -97,7 +97,7 @@ if (substr($CurPageURL,-3) == ".md") {
         <body data-theme="dark">
             <div class="col-lg-8 mx-auto p-3 py-md-5">
             <header class="mb-5">
-              <h1 class="float-md-start">'.$fileshort.'</h1>
+              <h1 class="float-md-start">'.$file.'</h1>
               <nav class="nav justify-content-center float-md-end">
                 <a class="nav-link" href="https://github.com/JokeNetwork/faq/blob/main/source/'.$file.'.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                 <div class="nav-link">

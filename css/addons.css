@@ -25,7 +25,6 @@
       background-color: #f9f2f4;
       border-radius: 4px;
   }
-
   pre {
       display: block;
       padding: 9.5px;
@@ -254,6 +253,21 @@ padding: 6px 13px;
   white-space: pre;
 }
 
+.breadcrumb-item.active {
+  max-height: 1.3rem;
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.float-md-start {
+  width: 50%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
 @media only screen and (max-width: 768px) {
   .nav {
   display: block;
@@ -261,8 +275,16 @@ padding: 6px 13px;
 
   .nav-link {
   padding: 0; 
+  display: inline-block;
   }
 
+  .nav-link:nth-child(2) {
+    float:  right;
+  }
+
+  .float-md-end {
+    padding-bottom: 1rem;
+  }
   .sponsor {
     display: none;
   }
@@ -284,6 +306,9 @@ padding: 6px 13px;
   }
   .mb-5 {
     margin-bottom: .5rem!important;
+  }
+  .float-md-start {
+    width: 90%;
   }
 
 }
