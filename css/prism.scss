@@ -5,14 +5,45 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
+
+ :root {
+    --pre-background: #f6f8fa;
+    --pre-main-color: #000;
+    --punctuation: #000;
+    --tag: #116329;
+    --attr-name: #0550ae;
+    --function-name: #6196cc;
+    --attr-value: #0a3069;
+}
+
+:root [data-theme='light'] {
+    --pre-background: #f6f8fa;
+    --pre-main-color: #000;
+    --punctuation: #000;
+    --tag: #116329;
+    --attr-name: #0550ae;
+    --function-name: #6196cc;
+    --attr-value: #0a3069;
+}
+
+:root [data-theme='dark'] {
+    --pre-background: #222f3e;
+    --pre-main-color: #FFF;
+    --punctuation: #FFF;
+    --tag: #7ee787;
+    --attr-name: #79c0ff;
+    --function-name: #6196cc;
+    --attr-value: #a5d6ff;
+}
+
  code:focus, pre:focus {
- 	outline: 0;
+ 		outline: 0;
     -webkit-box-shadow: 0;
     box-shadow: 0
  }
 
   code:active, pre:active {
- 	outline: 0;
+ 		outline: 0;
     -webkit-box-shadow: 0;
     box-shadow: 0
  }
@@ -50,8 +81,9 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background-color: #222f3e;
-	color: #FFF;
+	background-color: var(--pre-background);
+	color: var(--pre-main-color);
+	border: none;
 }
 
 /* Inline code */
@@ -70,21 +102,21 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-	color: #FFF;
+	color: var(--punctuation)
 }
 
 .token.tag {
-	color: #7ee787;
+	color: var(--tag)
 }
 
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: #79c0ff;
+	color: var(--attr-name)
 }
 
 .token.function-name {
-	color: #6196cc;
+	color: var(--function-name)
 }
 
 .token.boolean,
@@ -113,7 +145,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: #a5d6ff;
+	color: var(--attr-value);
 }
 
 .token.operator,
@@ -137,4 +169,3 @@ pre[class*="language-"] {
 .token.inserted {
 	color: green;
 }
-
