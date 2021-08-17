@@ -16,7 +16,6 @@
 
 Welcome to JokeNetworks Documentation page 🥳
 
-
 Here you can find and contribute to the source-code of our documentation-page, which is publicly available at https://faq.jokenetwork.de.
 
 ## What is this about?
@@ -44,8 +43,8 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 **Anyone can:**
 
-- Create a new page (source/ → new file → .md file)
-- Edit files
+-  Create a new page (source/ → new file → .md file)
+-  Edit files
 > Please don't open issues but instead directly make a Pull Request with your edits/new creations.
 
 
@@ -79,9 +78,9 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 This repo uses:
 
- - [Bootstrap v3.0.3](https://getbootstrap.com)
- - [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
- - [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
+ -  [Bootstrap v3.0.3](https://getbootstrap.com)
+ -  [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
+ -  [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
 
 ## License
 
