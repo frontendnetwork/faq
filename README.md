@@ -4,9 +4,8 @@
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
+	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
     <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
-<a href="https://github.com/marketplace/actions/super-linter"><img alt="GitHub Super-Linter" src="https://github.com/jokenetwork/faq/workflows/Lint%20Code%20Base/badge.svg"></a>
-<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
     <img alt="Commits" src="https://img.shields.io/github/commits-since/jokenetwork/faq/v2.0.2?logo=GitHub">
 	<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
 	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
