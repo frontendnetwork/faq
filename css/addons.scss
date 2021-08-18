@@ -246,7 +246,8 @@ a .fa-link {
 
 .fa-link {
     font-size: 1rem;
-    opacity: 0
+    opacity: 0;
+    transition:.5s
 }
 
 h2:hover .fa-link {
