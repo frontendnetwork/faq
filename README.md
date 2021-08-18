@@ -56,7 +56,7 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 <img width="100px" src="img/logo_alt.svg" align="center" alt="JokeNetwork FAQ Logo">
 
-If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!). 
+If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!).
 You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note that file-names are case-sensitive!**) for the documentation of your meta-tag (Only if you created them before).
 
 ### Add extension to W3 Validator 
