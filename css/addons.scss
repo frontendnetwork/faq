@@ -4,6 +4,93 @@ made to customize faq.jokenetwork.de
 Annotated
 */
 
+ :root {
+    --main-bg-color: #FFF;
+    --main-fg-color: #000;
+    --a-link-color: #428bca;
+    --blockquote-border: .25em solid rgb(208, 215, 222);
+    --blockquote-fg-color: rgb(87, 96, 106);
+    --pre-fg-color: #333;
+    --pre-bg-color: #f5f5f5;
+    --pre-border: 1px solid #ccc;
+    --code-bg-color: #f9f2f4;
+    --code-fg-color: #c7254e;
+    --mb-5-border-bottom: 1px solid #dee2e6 !important;
+    --btn-dark-border: 1px solid #b2bec3;
+    --btn-dark-fg-color: #212529;
+    --btn-dark-bg-color: #dfe6e9;
+    --btn-dark-hover-border: 1px solid #b2bec3;;
+    --btn-dark-hover-fg-color: #212529;
+    --btn-dark-hover-bg-color: #e1eaed;
+    --darkmode-after-content: " \f186 " !important;
+    --bg-secondary-color: #6c757d;
+    --a-fa-link-color: #000;
+    --contribute-a-fg-color: #000;
+}
+
+:root [data-theme='light'] {
+    --main-bg-color: #FFF;
+    --main-fg-color: #000;
+    --a-link-color: #428bca;
+    --blockquote-border: .25em solid rgb(208, 215, 222);
+    --blockquote-fg-color: rgb(87, 96, 106);
+    --pre-fg-color: #333;
+    --pre-bg-color: #f5f5f5;
+    --pre-border: 1px solid #ccc;
+    --code-bg-color: #f9f2f4;
+    --code-fg-color: #c7254e;
+    --mb-5-border-bottom: 1px solid #dee2e6 !important;
+    --btn-dark-border: 1px solid #b2bec3;
+    --btn-dark-fg-color: #212529;
+    --btn-dark-bg-color: #dfe6e9;
+    --btn-dark-hover-border: 1px solid #b2bec3;;
+    --btn-dark-hover-fg-color: #212529;
+    --btn-dark-hover-bg-color: #e1eaed;
+    --darkmode-after-content: " \f186 " !important;
+    --bg-secondary-color: #6c757d;
+    --a-fa-link-color: #000;
+    --contribute-a-fg-color: #000;
+}
+
+:root [data-theme='dark'] {
+    --main-bg-color: #121212;
+    --main-fg-color: #C9D1D9;
+    --a-link-color: #58A6FF;
+    --blockquote-border: .25em solid rgb(48, 54, 61);
+    --blockquote-fg-color: rgb(139, 148, 158);
+    --pre-fg-color: #FFF;
+    --pre-bg-color: #222f3e;
+    --pre-border: 0 solid !important;
+    --code-bg-color: #576574;
+    --code-fg-color: #fff;
+    --mb-5-border-bottom: 1px solid rgb(33, 38, 45) !important;
+    --btn-dark-border: 1px solid #424242;
+    --btn-dark-fg-color: #fff;
+    --btn-dark-bg-color: #212529;
+    --btn-dark-hover-border: 1px solid #424242;
+    --btn-dark-hover-fg-color: #fff;
+    --btn-dark-hover-bg-color: #1c1f23;
+    --darkmode-after-content: " \f0eb " !important;
+    --bg-secondary-color: rgb(201, 209, 217) !important;
+    --a-fa-link-color: rgb(201, 209, 217) !important;
+    --contribute-a-fg-color: rgb(201, 209, 217);
+}
+
+[data-theme="dark"] {
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+}
+
+[data-theme="light"] {
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+}
+
 /* Outgoing links */
 .content a[href^="https://"]::after {
     font-family: "Font Awesome 5 Free";
@@ -22,35 +109,48 @@ Annotated
 /* Link styling */
 a,
 .link {
-    color: #428bca;
+    color: var(--a-link-color);
     text-decoration: none;
     cursor: pointer;
+    transition:.5s
+}
+
+a:hover, .link:hover {
+    color:#0a58ca
+}
+
+/* GitHub flavored MD blockquote */
+blockquote {
+    border-left: var(--blockquote-border);
+    color: var(--blockquote-fg-color);
+    margin: 1rem 1rem 0 0;
+    padding: 0 1em;
 }
 
 /* Code blocks */
-code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    white-space: pre-wrap;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-}
-
 pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 30px 0;
     font-size: 13px;
     line-height: 1.428571429;
-    color: #333;
+    color: var(--pre-fg-color);
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: var(--pre-bg-color);
+    border: var(--pre-border);
     border-radius: 4px;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     white-space: pre-wrap;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: var(--code-fg-color);
+    white-space: pre-wrap;
+    background-color: var(--code-bg-color);
+    border-radius: 4px;
 }
 
 pre code {
@@ -61,21 +161,13 @@ pre code {
 h2,
 .border-bottom,
 .mb-5 {
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: var(--mb-5-border-bottom);
     padding-bottom: 5px;
     margin-bottom: 1rem !important;
 }
 
 .mb-5 {
     margin-bottom: 2.5rem !important;
-}
-
-/* GitHub flavored MD blockquote */
-blockquote {
-    border-left: .25em solid rgb(208, 215, 222);
-    color: rgb(87, 96, 106);
-    margin: 1rem 1rem 0 0;
-    padding: 0 1em;
 }
 
 /* Setting max-sizes for images, give them space arround */
@@ -95,20 +187,20 @@ blockquote {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    border: 1px solid #b2bec3;
+    border: var(--btn-dark-border);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     cursor: pointer;
     padding: .25rem .5rem;
     font-size: .875rem;
     border-radius: .2rem;
-    color: #212529;
-    background-color: #dfe6e9;
+    color: var(--btn-dark-fg-color);
+    background-color: var(--btn-dark-bg-color);
 }
 
 .btn-dark:hover {
-    border: 1px solid #b2bec3;
-    color: #212529;
-    background-color: #e1eaed;
+    border: var(--btn-dark-hover-border);
+    color: var(--btn-dark-hover-fg-color);
+    background-color: var(--btn-dark-hover-bg-color);
 }
 
 /* Minimal class for sponsor-buttons */
@@ -121,7 +213,7 @@ blockquote {
 #darkmode::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: " \f186 " !important
+    content: var(--darkmode-after-content);
 }
 
 /* Giving list-items space, defining a maximum width (important for index!) */
@@ -149,7 +241,7 @@ li {
 
 /* Defining the anchor-link-styles */
 a .fa-link {
-    color: #000;
+    color: var(--a-fa-link-color)
 }
 
 .fa-link {
@@ -165,7 +257,7 @@ h2:hover .fa-link {
 .bg-secondary {
     background: none !important;
     border: 1.5px solid #6c757d !important;
-    color: #6c757d;
+    color: var(--bg-secondary-color);
     font-weight: 400 !important;
 }
 
@@ -248,7 +340,7 @@ table th {
 }
 
 .contribute a {
-    color: #000;
+    color: var(--contribute-a-fg-color);
     font-weight: 700;
     font-size: 1rem;
 }
