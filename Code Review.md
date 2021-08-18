@@ -45,6 +45,6 @@ If you notice missing feedback on a commit, please immediately open an issue.
 
 ### Bad execution
 
-Sometimes something is just a work-arround or quick fix that belongs into a seperate shame-file. 
+Sometimes something is just a work-arround or quick fix that belongs into a seperate shame-file.
 Main files however should **not** include something like this and should be **appropriately written/coded**.
 If you spot anything like this, please feel free to fix it and make a pull request or open an issue.
