@@ -9,4 +9,5 @@ The apple-mobile-web-app-title metatag defines the Homescreen-title of an iOS "A
 ````
 
 ## W3
+
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
