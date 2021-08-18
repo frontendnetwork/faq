@@ -41,33 +41,6 @@ $Parsedown = new Parsedown();
 $Parsedown->setBreaksEnabled(true);
 $con = $Parsedown->text($content);
 
-// Add links and ids to h2 headers automatically
-function add_ids_to_header_tags($con)
-{
-    $pattern = '#(?P<full_tag><(?P<tag_name>h2)(?P<tag_extra>[^>]*)>(?P<tag_contents>[^<]*)</h2>)#i';
-    if (preg_match_all($pattern, $con, $matches, PREG_SET_ORDER)) {
-        $find    = array();
-        $replace = array();
-        foreach ($matches as $match) {
-            if (strlen($match['tag_extra']) && false !== stripos($match['tag_extra'], 'id=')) {
-                continue;
-            }
-            $find[]    = $match['full_tag'];
-            $id        = sanitize_title($match['tag_contents']);
-            $id_attr   = sprintf(' id="%s"', $id);
-            $replace[] = sprintf('<%1$s%2$s%3$s>%4$s <a href="#' . $id . '" class="heading-link"><i class="fas fa-link"></i></a> </%1$s>', $match['tag_name'], $match['tag_extra'], $id_attr, $match['tag_contents']);
-        }
-        $con = str_replace($find, $replace, $con);
-    }
-    return $con;
-}
-
-// Replace empty space with "-" for links
-function sanitize_title($title)
-{
-    return str_replace(" ", "-", $title);
-}
-
 // docs-pages
 // Check if requested file exists
 if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/' . $CurPageURL . '.md') !== "404: Not Found" && !empty($CurPageURL) && $CurPageURL !== "index" && !empty(file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/source/' . $CurPageURL . '.md'))) {
@@ -119,7 +92,7 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
             </header>
             <main class="pb-5 content">
 
-                    ' . add_ids_to_header_tags($con) . '
+                    ' . $con . '
                     ' . $versionbadge . '
                 </main>
                     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
@@ -134,7 +107,9 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
                     </div>
 
                     <script src="js/prism.js"></script>
-                    <script src="js/dark-mode-switch.min.js"></script>';
+                    <script src="js/dark-mode-switch.min.js"></script>
+                    <script src="js/anchor.min.js"></script>
+                    <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
     header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
@@ -194,7 +169,7 @@ elseif ($CurPageURL == "index") {
                     </nav>
             </header>
             <main class="pb-5 content">
-            ' . add_ids_to_header_tags($con);
+            ' .$con;
 
     // Render a "index of"-style ul-menu, using GitHub as a source
     // Load files from GitHub
@@ -224,7 +199,7 @@ elseif ($CurPageURL == "index") {
     // Count the contributors, add +1 for WHATWG contributions
     $numbercontributors = count($contributors) + 1;
 
-    echo '<h2 id="Contributors">Contributors <span class="badge rounded-pill bg-muted">' . $numbercontributors . '</span> <a href="#Contributors" class="heading-link"><i class="fas fa-link"></i></a></h2><ul class="contributors">';
+    echo '<h2 id="Contributors">Contributors <span class="badge rounded-pill bg-muted">' . $numbercontributors . '</span></h2><ul class="contributors">';
 
     array_walk($contributors, function ($data) {print '<li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="' . $data['html_url'] . '"><img src="' . $data['avatar_url'] . '" alt="' . $data['login'] . '"></a></div><div class="contributor_info"><span class="contributor_name"><a href="' . $data['html_url'] . '">' . $data['login'] . '</a></span><span class="contributor_contributions">' . $data['contributions'] . ' Contributions</span></div></div></li>';});
     echo '
@@ -244,7 +219,9 @@ elseif ($CurPageURL == "index") {
                         </ul>
                     </footer>
             </div>
-            <script src="js/dark-mode-switch.min.js"></script>';
+            <script src="js/dark-mode-switch.min.js"></script>
+            <script src="js/anchor.min.js"></script>
+            <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
     header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
