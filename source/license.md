@@ -1,4 +1,4 @@
-## Meta Tag license
+## MetaExtension license
 
 Is used to to define the license under which a website is published.
 

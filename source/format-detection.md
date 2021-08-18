@@ -1,4 +1,4 @@
-## Meta-Tag format-detection
+## MetaExtension format-detection
 
 The format-detection metatag defines wether phone numbers are detected automatically in iOS Safari or not.
 

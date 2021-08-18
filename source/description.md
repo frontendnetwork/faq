@@ -1,4 +1,4 @@
-## Meta Tag description
+## MetaExtension description
 
 Is used to to summarize the content of a webpage. This summarization is usually shown below the pages `<title>`-tag in search engines.
 

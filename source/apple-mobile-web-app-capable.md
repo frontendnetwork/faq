@@ -1,4 +1,4 @@
-## Meta-Tag apple-mobile-web-app-capable
+## MetaExtension apple-mobile-web-app-capable
 
 The apple-mobile-web-app-capable metatag defines wether a website/webapp which was added to the homescreen can run in fullscreen or not.
 

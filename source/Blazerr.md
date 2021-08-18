@@ -1,4 +1,4 @@
-This is an overview over all meta tags used by [Blazerr by JokeNetwork](https://jokenetwork.de).
+This is an overview over all meta extensions used by [Blazerr by JokeNetwork](https://jokenetwork.de).
 
 ## blazerr-support-identifier
 

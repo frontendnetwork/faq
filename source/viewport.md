@@ -1,4 +1,4 @@
-## Meta Tag viewport
+## MetaExtension viewport
 
 Is used to give the browser instructions on how to control the page's scaling and dimensions.
 

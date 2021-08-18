@@ -1,4 +1,4 @@
-## Meta Tag license:uri
+## MetaExtension license:uri
 
 Is used to to define the uri to the license, under which a website is published. This can either be your own license, which you've uploaded on a server, or an official source, such as the CreativeCommons-website. 
 

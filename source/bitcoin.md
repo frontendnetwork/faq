@@ -1,4 +1,4 @@
-## Meta-Tag bitcoin
+## MetaExtension bitcoin
 
 The bitcoin meta tag is used to show the bitcoin-adress of a website-owner inside a browser extension.
 
