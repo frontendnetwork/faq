@@ -106,9 +106,7 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
                     </footer>
                     </div>
 
-                    <script src="js/prism.js"></script>
-                    <script src="js/dark-mode-switch.min.js"></script>
-                    <script src="js/anchor.min.js"></script>
+                    <script src="js/bundle.js"></script>
                     <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
@@ -144,8 +142,6 @@ elseif ($CurPageURL == "index") {
             <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
 
             <link href="css/style.css" rel="stylesheet">
-
-            <script defer src="js/alpine.min.js"></script>
         </head>
 
         <body data-theme="dark">
@@ -219,8 +215,7 @@ elseif ($CurPageURL == "index") {
                         </ul>
                     </footer>
             </div>
-            <script src="js/dark-mode-switch.min.js"></script>
-            <script src="js/anchor.min.js"></script>
+            <script src="js/bundle.js"></script>
             <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
@@ -292,7 +287,8 @@ elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.
                         </ul>
                     </footer>
             </div>
-            <script src="js/dark-mode-switch.min.js"></script>';
+            <script src="js/bundle.js"></script>
+            <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
     header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
