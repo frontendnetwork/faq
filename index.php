@@ -185,6 +185,7 @@ elseif ($CurPageURL == "index") {
                     <template x-for="item in filteredItems" :key="item">
                         <li x-text="item" class="link" onclick="window.open(innerHTML, '_self')"></li>
                     </template>
+                    <noscript><?php array_walk($fileInfo, function ($data) {print '<li><a href="'. $data['name'].'">'. $data['name'].'</a></li>';}); ?></noscript>
                 </ul>
             </div>
 
