@@ -5,13 +5,8 @@
 Help us review our code by checking our main files, including
 
 - php
-
-
 - javascript (*this includes node.js, vue.js, alpine.js, angular.js and/or react.js*) 
-
-
 - css (*this includes SASS, LESS, bootstrap, tailwind and/or other frameworks used*)
-
 
 for **errors** or **inadequate quality**.
 
