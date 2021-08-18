@@ -11,7 +11,7 @@ Is used to to define the uri to the license, under which a website is published.
 ````
 
 License URIs for `content` may be:
-	
+
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 - [GNU-GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 - [GNU-LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)
