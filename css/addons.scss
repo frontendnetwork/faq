@@ -26,6 +26,7 @@ Annotated
     --bg-secondary-color: #6c757d;
     --a-fa-link-color: #000;
     --contribute-a-fg-color: #000;
+    --table-bg-color: #f5f6fa;
 }
 
 :root [data-theme='light'] {
@@ -50,6 +51,7 @@ Annotated
     --bg-secondary-color: #6c757d;
     --a-fa-link-color: #000;
     --contribute-a-fg-color: #000;
+    --table-bg-color: #f5f6fa;
 }
 
 :root [data-theme='dark'] {
@@ -74,6 +76,7 @@ Annotated
     --bg-secondary-color: rgb(201, 209, 217) !important;
     --a-fa-link-color: rgb(201, 209, 217) !important;
     --contribute-a-fg-color: rgb(201, 209, 217);
+    --table-bg-color: #2f3640;
 }
 
 [data-theme="dark"] {
@@ -331,9 +334,13 @@ tr {
     border-left-color: inherit;
 }
 
+tr:nth-child(even) {
+  background-color: var(--table-bg-color);
+}
+
 table td,
 table th {
-    border: 1px solid #30363d;
+    border: 0 solid #30363d;
     padding: 6px 13px;
 }
 
