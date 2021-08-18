@@ -1,4 +1,5 @@
 ## Meta Tag license:uri
+
 Is used to to define the uri to the license, under which a website is published. This can either be your own license, which you've uploaded on a server, or an official source, such as the CreativeCommons-website. 
 
 **Please note:** Only use `license:uri` if the license you are willing to use is not already listed as a `content`-possibility in [`license`](license).
@@ -10,7 +11,7 @@ Is used to to define the uri to the license, under which a website is published.
 ````
 
 License URIs for `content` may be:
-	
+
 - [GNU-AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 - [GNU-GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 - [GNU-LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)
@@ -23,4 +24,5 @@ License URIs for `content` may be:
 Also see [`license`](license).
 
 ## W3
+
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator

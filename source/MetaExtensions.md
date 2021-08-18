@@ -9,11 +9,13 @@ Metadata can also be used to verify page-ownership, or to en- or disable certain
 Metadata is not displayed on the page itself, and is therefore not intended for the end-user, but is **machine parsable**.
 
 That means that
+
 - **search engines**, such as Google, use Metadata to gather additional information about a page,
 -  **browsers** use Metadata to know how to display content (or even reload the page / follow a redirection) and
 -  **other web services** use Metadata for a variety of purposes.
 
 ### Examples for MetaTags
+
 `<meta>`-tags may look something like this in your `<head>` section:
 
 ````html
@@ -29,9 +31,9 @@ That means that
 <meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
 
 ````
-  
- 
+   
 ### Using MetaTags for SEO
+
 Some `<meta>`-tags are relevant for search engine optimazation. 
 
 A full overview over MetaTags which are understood by Google and other search engines is listed on a [Google Search Central Page](https://developers.google.com/search/docs/advanced/crawling/special-tags).
@@ -41,9 +43,11 @@ While `name="keywords"` is marked as <span class="badge bg-secondary">Deprecated
 `name="description"` is not fully ignored by search enginges, but Google encourages you to put more effort into your pages content instead of describing it through the description-extension. 
 
 ### Reference
+
 Read more about MetaTags at [W3Schools](https://www.w3schools.com/tags/tag_meta.asp) or at [Google Search Central](https://developers.google.com/search/docs/advanced/crawling/special-tags).
 
 ## About MetaExtensions
+
 Meta Extensions are extension values for the `name=""` attribute of the HTML `<meta>` element and are the main subject of the Docs at [faq.jokenetwork.de](/).
 
 The `name=""`attributes for the `<meta>`-tags should be well documented to be understood by everyone and listed as "*Proposal*" in the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).
@@ -53,4 +57,5 @@ The `name=""`attributes for the `<meta>`-tags should be well documented to be un
 Learn more about adding a MetaExtension to the WHATWG Wiki and to the W3 Validator here: [Contribute](README#Contribute).
 
 ### Reference
+
 Read more about MetaExtensions at the [WHATWG Wiki](https://wiki.whatwg.org/wiki/MetaExtensions).

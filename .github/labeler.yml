@@ -1,0 +1,6 @@
+root:
+- '*'
+
+source:
+- source/
+- source/*

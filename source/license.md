@@ -1,4 +1,5 @@
 ## Meta Tag license
+
 Is used to to define the license under which a website is published.
 
 ## Usage
@@ -21,4 +22,5 @@ Is used to to define the license under which a website is published.
 Other license types are also possible, but it is then recommended to link to the license via [`license:uri`](/licenseuri).
 
 ## W3
+
 <i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator
