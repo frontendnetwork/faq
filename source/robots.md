@@ -37,6 +37,7 @@ Is used to tell crawler-robots of search engines which sites to index.
 ## Results
 * `nosnippet`:
 	![DuckDuckGo search result](img/nosnippet.svg)
+
 * `noarchive` & `notranslate`:
 	![DuckDuckGo search result](img/noarchive.svg)
 
