@@ -34,7 +34,6 @@ Then just open a pull request and we'll review your page and add it.
 ### How to contribute
 
 Please write your changes in [Markdown](https://www.markdownguide.org). 
-
 You can use the following components of [Bootstrap v5.0](https://getbootstrap.com):
 
 - [`Alerts`](https://getbootstrap.com/docs/5.0/components/alerts/)
