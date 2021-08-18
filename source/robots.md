@@ -24,7 +24,7 @@ Is used to tell crawler-robots of search engines which sites to index.
 | `unavailable_after: [date/time]` | Do not show this page in search results after `[date/time]`                 |
 
 
-**Usage samples**:
+### Usage samples
 
 ````html
 <meta name="robots" content="index,nofollow">
@@ -33,6 +33,12 @@ Is used to tell crawler-robots of search engines which sites to index.
 <meta name="robots" content="index,follow,nosnippet">
 <meta name="robots" content="index,unavailable_after: 2021-08-18">
 ````
+
+## Results
+* `nosnippet`:
+	![DuckDuckGo search result](img/nosnippet.svg)
+* `noarchive` & `notranslate`:
+	![DuckDuckGo search result](img/noarchive.svg)
 
 Read more at [Google Search Central](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#directives).
 
