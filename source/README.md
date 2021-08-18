@@ -84,4 +84,4 @@ This repo uses:
 
 ## License
 
-All text and code in this repository is licensed under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All text and code in this repository is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
