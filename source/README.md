@@ -76,11 +76,11 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 This repo uses:
 
- - [Bootstrap v3.0.3](https://getbootstrap.com) 
- - [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
- - [alpine.js](https://alpinejs.dev)
- - [Prism.js](https://prismjs.com)
- - [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
+- [Bootstrap v3.0.3](https://getbootstrap.com) 
+- [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
+- [alpine.js](https://alpinejs.dev)
+- [Prism.js](https://prismjs.com)
+- [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
 
 ## License
 
