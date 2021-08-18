@@ -4,7 +4,7 @@ made to customize faq.jokenetwork.de
 Annotated
 */
 
- :root {
+:root {
     --main-bg-color: #FFF;
     --main-fg-color: #000;
     --a-link-color: #428bca;
@@ -112,11 +112,12 @@ a,
     color: var(--a-link-color);
     text-decoration: none;
     cursor: pointer;
-    transition:.5s
+    transition: .5s
 }
 
-a:hover, .link:hover {
-    color:#0a58ca
+a:hover,
+.link:hover {
+    color: #0a58ca;
 }
 
 /* GitHub flavored MD blockquote */
@@ -242,13 +243,13 @@ li {
 /* Defining the anchor-link-styles */
 .anchorjs-link {
     color: var(--a-fa-link-color);
-    padding-left: 0.1em!important;
+    padding-left: 0.1em !important;
     opacity: 0;
-    transition:.5s
+    transition: .5s
 }
 
 .anchorjs-link:hover {
-    color: var(--a-fa-link-color)!important
+    color: var(--a-fa-link-color) !important;
 }
 
 /* Defining colors for badges */
@@ -351,7 +352,7 @@ table th {
 }
 
 .contributor_card a[href^="https://"]::after {
-    content: "" !important
+    content: "" !important;
 }
 
 .contributor_image img {
