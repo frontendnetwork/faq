@@ -240,18 +240,15 @@ li {
 }
 
 /* Defining the anchor-link-styles */
-a .fa-link {
-    color: var(--a-fa-link-color)
-}
-
-.fa-link {
-    font-size: 1rem;
+.anchorjs-link {
+    color: var(--a-fa-link-color);
+    padding-left: 0.1em!important;
     opacity: 0;
     transition:.5s
 }
 
-h2:hover .fa-link {
-    opacity: 1;
+.anchorjs-link:hover {
+    color: var(--a-fa-link-color)!important
 }
 
 /* Defining colors for badges */
