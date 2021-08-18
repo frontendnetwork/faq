@@ -5,7 +5,7 @@ This is an overview over all meta tags used by [Blazerr by JokeNetwork](https://
 Is used to identify users along with a cookie, which you get from the library `blazerr-lib.php` (available at the member-center). 
 Please see `blazerr-support-id-noncookies` for a GDPR conform version.
 
-### Usage 
+### Usage
 
 ````html
 <meta name="blazerr-support-identifier" content="Your uniqid">
