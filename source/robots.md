@@ -10,7 +10,7 @@ Is used to tell crawler-robots of search engines which sites to index.
 
 `content` may be:
 
-| `content`                        | Usage                                                                       |
+| content                          | Usage                                                                       |
 |----------------------------------|-----------------------------------------------------------------------------|
 | `all`                            | Standard: No restrictions, indexes all pages, doesn't need to be specified  |
 | `index,follow`                   | Equivalent to `all`                                                         |
@@ -22,6 +22,7 @@ Is used to tell crawler-robots of search engines which sites to index.
 | `notranslate`                    | Do not offer translation of this page in search results                     |
 | `noimageindex`                   | Do not index images on this page, do not show images in search results      |
 | `unavailable_after: [date/time]` | Do not show this page in search results after `[date/time]`                 |
+
 
 **Usage samples**:
 
