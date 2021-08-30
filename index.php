@@ -110,8 +110,8 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
                     <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
-    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
-    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
+    header('Access-Control-Allow-Origin: https://stats.faq.jokenetwork.de');
+    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
 
     echo '
                     </body>
@@ -220,8 +220,8 @@ elseif ($CurPageURL == "index") {
             <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
-    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
-    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
+    header('Access-Control-Allow-Origin: https://stats.faq.jokenetwork.de');
+    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
     echo '
         </body>
 
@@ -292,8 +292,8 @@ elseif (!empty($CurPageURL) && file_get_contents('https://raw.githubusercontent.
             <script>anchors.add();</script>';
 
     // Analytics & Cookie, ignore
-    header('Access-Control-Allow-Origin: https://analytics.jokenetwork.de');
-    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://analytics.jokenetwork.de/tracker.js" data-ackee-server="https://analytics.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
+    header('Access-Control-Allow-Origin: https://stats.faq.jokenetwork.de');
+    if (isset($_COOKIE['log']) && $_COOKIE['log'] == "Yes") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';} elseif (isset($_COOKIE['log']) && $_COOKIE['log'] == "No") {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475"></script>';} else {echo '<script async src="https://stats.faq.jokenetwork.de/tracker.js" data-ackee-server="https://stats.faq.jokenetwork.de" data-ackee-domain-id="ad280e82-bc14-44a1-9758-e000a6c2f475" data-ackee-opts=\'{ "detailed": true }\'></script>';}
     echo '
         </body>
 
