@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.3.1";
+$version = "v2.3.2";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
@@ -203,7 +203,7 @@ elseif ($CurPageURL == "index") {
             <li class="contribute"><div class="contributor_card"><div class="contributor_image"><a href="//github.com/WHATWG"><img src="https://avatars.githubusercontent.com/u/2226336?v=4" alt="WHATWG" class="fullimg"></a></div><div class="contributor_info"><span class="contributor_name"><a href="//github.com/WHATWG">WHATWG</a></span><span class="contributor_contributions">Contributing</span></div></div></li>
 
             </ul>
-            <p>Want to get added to this list? <a href="README.md#Contribute">Learn how to contribute</a>.</p>
+            <p>Want to get added to this list? <a href="README.md#contribute">Learn how to contribute</a>.</p>
             ' . $versionbadge . '
                 </main>
                     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
