@@ -1,10 +1,10 @@
 ## About MetaTags
 
-The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.
+The `<meta>` tag defines metadata about a HTML document. Metadata is data (information) about other data (in case of HTML information about the HTML-document).
 
 `<meta>`-tags are always placed in the `<head>`-section of a HTML document and are used to specify metadata about a page, such as the charset (most likely UTF-8), a page description or the pages author. 
 
-Metadata can also be used to verify page-ownership, or to en- or disable certain functions of a browser.
+Metadata can also be used to verify page-ownership (prominently used by Google as [`google-site-verification`](google-site-verification)), or to en- or disable certain functions of a browser.
 
 Metadata is not displayed on the page itself, and is therefore not intended for the end-user, but is **machine parsable**.
 
