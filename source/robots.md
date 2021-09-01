@@ -42,7 +42,3 @@ Is used to tell crawler-robots of search engines which sites to index.
 	![DuckDuckGo search result](img/noarchive.svg)
 
 Read more at [Google Search Central](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#directives).
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
