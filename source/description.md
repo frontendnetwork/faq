@@ -13,7 +13,3 @@ Is used to to summarize the content of a webpage. This summarization is usually 
 ## Result
 
 ![DuckDuckGo search result](img/description.svg)
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
