@@ -11,7 +11,3 @@ Read more about Googles Site Verification at [Googles official documentation](ht
 ````
 
 `content` should be a verification code issued by Google for the Google Admin Console.
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
