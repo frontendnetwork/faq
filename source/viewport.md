@@ -18,7 +18,3 @@ Is used to give the browser instructions on how to control the page's scaling an
   Is not reccommended and marked as a warning in W3 Validator since zooming in an important accessibility feature, which is why it won't work in most browsers and is therefore marked as <span class="badge bg-danger">Unsupported</span>.
 
 Read more at [W3Schools](https://www.w3schools.com/css/css_rwd_viewport.asp).
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
