@@ -51,7 +51,3 @@ Checks whether Blazerr SEO has been used or not. It contains the user-id and the
 ````
 
 `0001` is an example for a user id, `v0.7` identifies which version of SEO is used (In this case version Beta 7 / 0.7). If you're using Blazerr SEO, you have to include this meta-tag. Otherwise the tool will not work.
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
