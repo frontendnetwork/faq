@@ -8,7 +8,3 @@ Is now ignored by major search engines and is therefore <span class="badge bg-da
 ````html
 <meta name="keywords" content="Documentation, FAQ, MetaTags, HTML, WHATWG">
 ````
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
