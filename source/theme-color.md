@@ -1,6 +1,6 @@
 ## MetaExtension theme-color
 
-Is used to brand the adress bar of a website (only on mobile devices) in a selcted Hex-color. 
+Is used to brand the address bar of a website (only on mobile devices) in a selected Hex-color. 
 
 Read more about `theme-color` on [Googles Developer Portal](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android).
 
