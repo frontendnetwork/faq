@@ -9,7 +9,3 @@ More information on this and the originating idea can be found in the [Bitcoin T
 ````html
 <meta name="bitcoin" content="Your bitcoin-adress">
 ````
-
-
-## W3
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
