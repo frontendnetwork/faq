@@ -10,7 +10,3 @@ Some Content Management Systems (CMS) set this tag automatically.
 ````
 
 Also see <author>.
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
