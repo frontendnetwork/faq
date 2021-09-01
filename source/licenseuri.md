@@ -22,7 +22,3 @@ License URIs for `content` may be:
 - [The-Unlicense](https://choosealicense.com/licenses/unlicense/)
 
 Also see [`license`](license).
-
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-times"></i> In the W3 Validator
