@@ -12,6 +12,4 @@ Read more about `theme-color` on [Googles Developer Portal](https://developers.g
 
 `content` can be any valid Hex-color or CSS color-value.
 
-## W3
-
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i> In the W3 Validator
+`theme-color` is defined in the [HTML Standard](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color).
