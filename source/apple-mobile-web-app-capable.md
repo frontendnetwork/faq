@@ -14,6 +14,3 @@ Read more about Apple's Webapps at [Apple's official documentation](https://deve
 
 
 `content` can also be `false`, but the meta-tag is obsolete then.
-
-## W3
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
