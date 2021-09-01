@@ -3,7 +3,7 @@
 // https://github.com/jokenetwork/faq
 
 // Define release version
-$version = "v2.3.2";
+$version = "v2.3.3";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once '/home/jake//vendor/autoload.php';
