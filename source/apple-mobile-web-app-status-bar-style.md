@@ -19,6 +19,3 @@ Variables for `content`:
 - `black-translucent`
 
 Requires the [apple-mobile-web-app-capable](apple-mobile-web-app-capable) meta-tag to be set to `true`.
-
-## W3
-<i class="fas fa-check"></i> In the WHATWG Wiki | <i class="fas fa-check"></i>  In the W3 Validator
