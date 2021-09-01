@@ -48,6 +48,14 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
     // Send HTTP Response Code "200 - OK"
     http_response_code(200);
 
+    $verify = file_get_contents('https://wiki.whatwg.org/wiki/MetaExtensions');
+    if (preg_match("/\b".$$CurPageURL."\b/i", $verify)) {
+       $whatwgstatus = '<h2>W3</h2><p><i class="fas fa-check"></i> In the WHATWG Wiki</p>';
+    }
+    else {
+        $whatwgstatus == '<h2>W3</h2><p><i class="fas fa-times"></i> Not in the WHATWG Wiki</p>';
+    }
+
     // Check if filename is longer than 11 characters, shorten if true
     $fileshort = strlen($file) > 18 ? substr($file, 0, 18) . "..." : $file;
 
@@ -93,6 +101,7 @@ if (file_get_contents('https://raw.githubusercontent.com/JokeNetwork/faq/main/so
             <main class="pb-5 content">
 
                     ' . $con . '
+                    ' . $whatwgstatus . '
                     ' . $versionbadge . '
                 </main>
                     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
