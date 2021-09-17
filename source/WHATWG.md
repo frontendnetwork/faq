@@ -12,11 +12,11 @@ Since 2019, WHATWG is the sole publisher of the HTML and DOM standards, while th
 
 ### Participate in the WHATWG
 
-More information on how to participate within the WHATWG can be found on [Participation - WHATWG](https://participate.whatwg.org).
+Information on how to participate within the WHATWG can be found on [Participation - WHATWG](https://participate.whatwg.org).
 
 ### Reference
 
-Read more about the WHATWG on their [Wikipedia Page](https://en.wikipedia.org/wiki/WHATWG), their [official FAQ Page](https://whatwg.org/faq), their [HTML Standard FAQ Page](https://github.com/whatwg/html/blob/main/FAQ.md) or their [Wiki](https://wiki.whatwg.org).
+Read more about the WHATWG on their [official FAQ Page](https://whatwg.org/faq), their [Wikipedia Page](https://en.wikipedia.org/wiki/WHATWG), their [HTML Standard FAQ Page](https://github.com/whatwg/html/blob/main/FAQ.md) or their own [Wiki](https://wiki.whatwg.org).
 
 <img src="https://faq.jokenetwork.de/img/logo_alt.svg" alt="Logo Alternative" width="100">
 
@@ -24,4 +24,4 @@ Read more about the WHATWG on their [Wikipedia Page](https://en.wikipedia.org/wi
 
 The JokeNetwork Docs are not directly associated with the WHATWG, even though the members of JokeNetwork are also participants of the WHATWG.
 
-The main goal of the JokeNetwork Docs is to provide documentation for the WHATWG Wiki, especially for the MetaExtensions-part, which you can [learn more about here](MetaExtensions#About-MetaExtensions).
+The main goal of the JokeNetwork Docs is to provide documentation for the WHATWG Wiki, especially for the MetaExtensions page which you can [learn more about here](MetaExtensions#About-MetaExtensions).
