@@ -1,6 +1,7 @@
 ## MetaExtension robots
 
 Is used to tell crawler-robots of search engines which sites to index.
+We recommend using a [robots.txt-file](https://developers.google.com/search/docs/advanced/robots/intro) insteads of those meta-extensions or a combination of both. 
 
 ## Usage
 
@@ -41,4 +42,5 @@ Is used to tell crawler-robots of search engines which sites to index.
 * `noarchive` & `notranslate`:
 	![DuckDuckGo search result](img/noarchive.svg)
 
-Read more at [Google Search Central](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#directives).
+Read more about the MetaExtension `robots` at [Google Search Central](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#directives).
+Read more about `robots.txt` at [Google Developers Docs](https://developers.google.com/search/docs/advanced/robots/intro).
