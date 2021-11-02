@@ -76,12 +76,12 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 
 This repo uses:
 
-- [Bootstrap v3.0.3](https://getbootstrap.com) 
-- [Parsedown](https://github.com/erusev/parsedown) by [Emanuil Rusev](https://erusev.com)
-- [alpine.js](https://alpinejs.dev)
-- [Prism.js](https://prismjs.com)
-- [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome)
+- [Bootstrap v3.0.3](https://getbootstrap.com) (C) by [Twitter, Inc](https://twitter.com). & [The Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) (Published under MIT license)
+- [Parsedown](https://github.com/erusev/parsedown) (C) by [Emanuil Rusev](https://erusev.com) (Published under MIT license)
+- [alpine.js](https://alpinejs.dev) (C) by [Caleb Porzio](https://github.com/calebporzio) (Published unter MIT license)
+- [Prism.js](https://prismjs.com) (C) by Lea Verou (Published under MIT license) 
+- [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome) (C) by the [FontAwesome-Team](https://github.com/FortAwesome) (Published under MIT license, CC BY 4.0 License and SIL OFL 1.1 License)
 
 ## License
 
-All text and code in this repository is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+All text and code in this repository is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) besides the aboved named licenses for dependencies.
