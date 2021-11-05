@@ -135,7 +135,7 @@ blockquote {
 pre {
     display: block;
     padding: 9.5px;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
     font-size: 13px;
     line-height: 1.428571429;
     color: var(--pre-fg-color);
@@ -176,12 +176,12 @@ h2,
 
 /* Setting max-sizes for images, give them space arround */
 .content img {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     max-width: 30%;
 }
 
 .content li img {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     max-width: 50%;
 }
 
