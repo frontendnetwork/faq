@@ -69,7 +69,7 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 	Parsedown.php/
 	README.md
 	├── source/
-	│   └── [sourcfiles].md
+	│   └── [sourcefiles].md
 	└── css 
 
 ## Credits 
