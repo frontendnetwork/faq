@@ -1,12 +1,21 @@
 <?php
-// JokeNetwork FAQ for WHATWG MetaExtensions
-// https://github.com/jokenetwork/faq
+/**
+ * JokeNetwork FAQ for WHATWG MetaExtensions
+ * @link https://github.com/jokenetwork/faq
+ * @author Philip Brembeck
+ * @author JokeNetwork and Contributors 
+ * @copyright (C) 2022 JokeNetwork
+ * @license CC-BY-4.0
+ * @link https://github.com/JokeNetwork/faq/blob/main/LICENSE
+ * @var string $user
+ * @var string $secret
+ */
 
 // Define release version
-$version = "v2.3.3";
+$version = "v2.3.4";
 
 // Require GitHub API via php-github-api by KnpLabs
-require_once '/home/jake//vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 require_once 'credentials.php';
 $client = new \Github\Client();
 $client->authenticate($user, $secret, Github\Client::AUTH_CLIENT_ID);
