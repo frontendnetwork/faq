@@ -63,7 +63,8 @@ You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note t
 
 Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), informing the W3 about the meta-tag you added to the WHATWG Wiki, their purpose, and state that you added them to the WHATWG Wiki.
 
-### File Structure
+### Installing and file Structure
+#### Filestructure
 
 	index.php
 	Parsedown.php/
@@ -71,6 +72,27 @@ Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), info
 	├── source/
 	│   └── [sourcfiles].md
 	└── css 
+#### Installing
+Since this repo mainly exists to change and add definitions to the WHATWG MetaExtensions documentation we don't reccomend installing it on your own server. 
+If you want to do so anyways or create a mirror of the documentation (which is up and running since 2015 without any major issues), you can use the following guide to install it. Please be aware, that you need to figure out some things yourself and this documentation is not complete. 
+
+Minimum requirements:
+* Apache or Nginx webserver 
+* PHP >=7.2 installed
+* Composer installed
+* npm installed
+* Github API Personal access token (Key & Secret) 
+
+Download the latest [release from here](https://github.com/JokeNetwork/faq/releases).
+
+Run in the repos directory: 
+````bash
+composer install
+npm install 
+````
+
+## Security
+All security issues and vulnerabilites regarding this repo which are fixed or in the process of being fixed are listed on the [philip.media Responsible vulnerability disclosure acknowledgements](https://philip-media.github.io/security-policy/Acknowledgments.html). 
 
 ## Credits 
 
