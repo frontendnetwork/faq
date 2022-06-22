@@ -12,7 +12,7 @@
  */
 
 // Define release version
-$version = "v2.3.4";
+$version = "v2.3.5";
 
 // Require GitHub API via php-github-api by KnpLabs
 require_once __DIR__ . '/vendor/autoload.php';
