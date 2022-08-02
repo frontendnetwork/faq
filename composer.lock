@@ -455,16 +455,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "c230ab0162afeaec4318276e6a470af4b52da5fe"
+                "reference": "a43662d7c9d4032768ec829dde2cf143878a4104"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/c230ab0162afeaec4318276e6a470af4b52da5fe",
-                "reference": "c230ab0162afeaec4318276e6a470af4b52da5fe",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/a43662d7c9d4032768ec829dde2cf143878a4104",
+                "reference": "a43662d7c9d4032768ec829dde2cf143878a4104",
                 "shasum": ""
             },
             "require": {
@@ -531,7 +531,7 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/php-github-api/issues",
-                "source": "https://github.com/KnpLabs/php-github-api/tree/v3.7.0"
+                "source": "https://github.com/KnpLabs/php-github-api/tree/v3.8.0"
             },
             "funding": [
                 {
@@ -539,7 +539,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-12T17:59:07+00:00"
+            "time": "2022-08-01T18:58:16+00:00"
         },
         {
             "name": "php-http/cache-plugin",
@@ -677,16 +677,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.14.2",
+            "version": "1.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "c8d48852fbc052454af42f6de27635ddd916b959"
+                "reference": "31d8ee46d0215108df16a8527c7438e96a4d7735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/c8d48852fbc052454af42f6de27635ddd916b959",
-                "reference": "c8d48852fbc052454af42f6de27635ddd916b959",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/31d8ee46d0215108df16a8527c7438e96a4d7735",
+                "reference": "31d8ee46d0215108df16a8527c7438e96a4d7735",
                 "shasum": ""
             },
             "require": {
@@ -738,9 +738,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.14.2"
+                "source": "https://github.com/php-http/discovery/tree/1.14.3"
             },
-            "time": "2022-05-25T07:26:05+00:00"
+            "time": "2022-07-11T14:04:40+00:00"
         },
         {
             "name": "php-http/httplug",
@@ -1306,7 +1306,7 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
@@ -1353,7 +1353,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.1"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.2"
             },
             "funding": [
                 {
