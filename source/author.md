@@ -9,4 +9,4 @@ Some Content Management Systems (CMS) set this tag automatically.
 <meta name="author" content="JokeNetwork">
 ````
 
-Also see <copyright>.
+Also see [copyright](copyright).
