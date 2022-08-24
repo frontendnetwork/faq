@@ -44,3 +44,5 @@ We recommend using a [robots.txt-file](https://developers.google.com/search/docs
 
 Read more about the MetaExtension `robots` at [Google Search Central](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#directives).
 Read more about `robots.txt` at [Google Developers Docs](https://developers.google.com/search/docs/advanced/robots/intro).
+
+Also see [`revisit`](revisit) and [`revisit-after`](revisit-after).
