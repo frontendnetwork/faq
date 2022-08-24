@@ -10,4 +10,4 @@ We recommend using a [robots.txt-file](https://developers.google.com/search/docs
 <meta name="revisit" content="5 days">
 ````
 
-Also see [revisit-after](revisit-after) and [robots](robots).
+Also see [`revisit-after`](revisit-after) and [`robots`](robots).
