@@ -5,5 +5,5 @@ Was used to tell crawlers, like GoogleBot, when the website was last updated. Th
 ## Usage
 
 ````html
-<meta name="revised" content="19/01/2023" />
+<meta name="revised" content="19/01/2023">
 ````
