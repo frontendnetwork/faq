@@ -1,6 +1,6 @@
 <p align="center">
  <img width="100px" src="img/logo.svg" align="center" alt="JokeNetwork FAQ Logo">
- <h1 align="center">JokeNetwork FAQ</h1>
+ <h1 align="center">FrontEndNetWork FAQ</h1>
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
@@ -14,13 +14,13 @@
 	<a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
   </p>
 
-Welcome to JokeNetworks Documentation page 🥳
+Welcome to FrontEndNetWorks Documentation page 🥳
 
 Here you can find and contribute to the source-code of our documentation-page, which is publicly available at <https://faq.jokenetwork.de>.
 
 ## What is this about?
 
-In our documentation anyone can find public ~~docs for our (deprecated) services (which aren't important for that matter) and also~~ **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG](https://wiki.whatwg.org/wiki/MetaExtensions)).
+In our documentation anyone can find public **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG](https://wiki.whatwg.org/wiki/MetaExtensions)).
 
 The "faq" page with questions answered, that weren't asked frequently, was created in January 2014, when [@philipbrembeck](https://github.com/philipbrembeck) was in need of creating a new HTML MetaExtension, which would not be marked as an error in the W3 Validator.
 
