@@ -20,8 +20,8 @@ Read more about the WHATWG on their [official FAQ Page](https://whatwg.org/faq),
 
 <img src="https://faq.jokenetwork.de/img/logo_alt.svg" alt="Logo Alternative" width="100">
 
-## WHATWG & JokeNetwork Docs
+## WHATWG & FrontendNetwork Docs
 
-The JokeNetwork Docs are not directly associated with the WHATWG, even though the members of JokeNetwork are also participants of the WHATWG.
+The FrontendNetwork Docs are not directly associated with the WHATWG, even though the members of FrontendNetwork are also participants of the WHATWG.
 
-The main goal of the JokeNetwork Docs is to provide documentation for the WHATWG Wiki, especially for the MetaExtensions page which you can [learn more about here](MetaExtensions#About-MetaExtensions).
+The main goal of the FrontendNetwork Docs is to provide documentation for the WHATWG Wiki, especially for the MetaExtensions page which you can [learn more about here](MetaExtensions#About-MetaExtensions).
