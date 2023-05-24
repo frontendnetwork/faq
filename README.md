@@ -1,11 +1,19 @@
+> **Note** <br /> 
+> Due to the lack of contribution, this repo is not updated anymore and will remain on technologies like PHP. <br>
+> You're welcome to contribute, change pages and update information. If you're willing to maintain this repo in the future, just contact us.<br>
+
+> **Warning** <br /> 
+> The core team of FAQ is not participating in this project anymore.<br>
+> Only security related updates will be integrated.<br>
+> PRs with new information on MetaTags will also be approved and merged.
+
 <p align="center">
- <img width="100px" src="img/logo.svg" align="center" alt="JokeNetwork FAQ Logo">
  <h1 align="center">FrontEndNetWork FAQ</h1>
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
 	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2Ffaq.svg?type=small"/></a>
-	<a href="https://jokenetwork.de/badges"><img alt="JKN Status: Active" src="https://jokenetwork.de/assets/img/gitstatus/communitybased.svg"></a>
+	<a href="https://jokenetwork.de/badges"><img alt="JKN Status: Inactive" src="https://jokenetwork.de/assets/img/gitstatus/inactive.svg"></a>
 	<a href="https://codeclimate.com/github/JokeNetwork/faq/maintainability"><img src="https://api.codeclimate.com/v1/badges/471a4451f5f942ebadc3/maintainability" /></a>
 	<a href="https://www.codacy.com/gh/JokeNetwork/faq/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JokeNetwork/faq&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/289e5f20012c427283981741b1402da9" alt="Codacy Badge"></a>
     <a href="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml"><img alt="Codac Security Scan" src="https://github.com/JokeNetwork/faq/actions/workflows/codacy-analysis.yml/badge.svg"></a>
