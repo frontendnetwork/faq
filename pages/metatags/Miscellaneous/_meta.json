@@ -1,0 +1,18 @@
+{
+  "abstract": "abstract (Obsolete)",
+  "author": "author",
+  "bitcoin": "bitcoin",
+  "canonical": "canonical",
+  "classification": "classification (Obsolete)",
+  "copyright": "copyright",
+  "distribution": "distribution",
+  "format-detection": "format-detection",
+  "keywords": "keywords (Obsolete)",
+  "language": "language",
+  "license": "license",
+  "licenseuri": "license:uri",
+  "no-email-collection": "no-email-collection (Obsolete)",
+  "subject": "subject (Obsolete)",
+  "summary": "summary (Obsolete)",
+  "topic": "topic (Obsolete)"
+}
