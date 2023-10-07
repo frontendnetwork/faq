@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
-  logo: <span>FrontendNetwork FAQ</span>,
+  logo: <span>FEN MetaTag Documentation</span>,
   project: {
     link: 'https://github.com/frontendnetwork/faq',
   },
@@ -15,7 +15,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – FAQ'
+        titleTemplate: '%s – FEN MetaTag Documentation'
       };
     } else {
       return {

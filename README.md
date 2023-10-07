@@ -1,14 +1,5 @@
-> **Note** <br /> 
-> Due to the lack of contribution, this repo is not updated anymore and will remain on technologies like PHP. <br>
-> You're welcome to contribute, change pages and update information. If you're willing to maintain this repo in the future, just contact us.<br>
-
-> **Warning** <br /> 
-> The core team of FAQ is not participating in this project anymore.<br>
-> Only security related updates will be integrated.<br>
-> PRs with new information on MetaTags will also be approved and merged.
-
 <p align="center">
- <h1 align="center">FrontEndNetWork FAQ</h1>
+ <h1 align="center">FEN MetaTag Documentation</h1>
  <p align="center">Documenting MetaExtensions for the WHATWG Community</p>
 </p>
   <p align="center">
@@ -32,22 +23,14 @@ In our documentation anyone can find public **docs for the W3 WHATWG community**
 
 ## Contribute
 
-If you want to contribute, fork the Git-Repro ([frontendnetwork/faq](https://github.com/frontendnetwork/faq)) and create a new document under `source/` named `<title of your page>.md`.
+If you want to contribute, fork the Git-Repro ([frontendnetwork/faq](https://github.com/frontendnetwork/faq)) and create a new document under `pages/metatags` named `<title of your page>.md`.
 
-You can also change existing doc-pages. Just click on "Edit on GitHub" on the corresponding page.
+You can also change existing doc-pages. Just click on "Edit" on the corresponding page.
 Then just open a pull request and we'll review your page and add it.
 
 ### How to contribute
 
 Please write your changes in [Markdown](https://www.markdownguide.org). 
-You can use the following components of [Bootstrap v5.0](https://getbootstrap.com):
-
-- [`Alerts`](https://getbootstrap.com/docs/5.0/components/alerts/)
-- [`Badges`](https://getbootstrap.com/docs/5.1/components/badge/)
-- [`Buttons`](https://getbootstrap.com/docs/5.0/components/buttons/)
-- [`Cards`](https://getbootstrap.com/docs/5.0/components/card/)
-
-You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com).
 
 **Anyone can:**
 
@@ -56,7 +39,6 @@ You can also use all free icons from [FontAwesome v5.0](https://fontawesome.com)
 
 
 > Please don't open issues but instead directly make a Pull Request with your edits/new creations.
-
 
 ### Add extensions to the WHATWG Wiki
 
@@ -69,46 +51,8 @@ You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note t
 
 Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), informing the W3 about the meta-tag you added to the WHATWG Wiki, their purpose, and state that you added them to the WHATWG Wiki.
 
-### Installing and file Structure
-#### Filestructure
-
-	index.php
-	Parsedown.php/
-	README.md
-	├── source/
-	│   └── [sourcfiles].md
-	└── css 
-#### Installing
-Since this repo mainly exists to change and add definitions to the WHATWG MetaExtensions documentation we don't reccomend installing it on your own server. 
-If you want to do so anyways or create a mirror of the documentation (which is up and running since 2015 without any major issues), you can use the following guide to install it. Please be aware, that you need to figure out some things yourself and this documentation is not complete. 
-
-Minimum requirements:
-* Apache or Nginx webserver 
-* PHP >=7.2 installed
-* Composer installed
-* npm installed
-* Github API Personal access token (Key & Secret) 
-
-Download the latest [release from here](https://github.com/frontendnetwork/faq/releases).
-
-Run in the repos directory: 
-````bash
-composer install
-npm install 
-````
-
 ## Security
 All security issues and vulnerabilites regarding this repo which are fixed or in the process of being fixed are listed on the [philip.media Responsible vulnerability disclosure acknowledgements](https://philip-media.github.io/security-policy/Acknowledgments.html). 
-
-## Credits 
-
-This repo uses:
-
-- [Bootstrap v3.0.3](https://getbootstrap.com) (C) by [Twitter, Inc](https://twitter.com). & [The Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) (Published under MIT license)
-- [Parsedown](https://github.com/erusev/parsedown) (C) by [Emanuil Rusev](https://erusev.com) (Published under MIT license)
-- [alpine.js](https://alpinejs.dev) (C) by [Caleb Porzio](https://github.com/calebporzio) (Published unter MIT license)
-- [Prism.js](https://prismjs.com) (C) by Lea Verou (Published under MIT license) 
-- [Font Awesome v5.15.3](https://github.com/FortAwesome/Font-Awesome) (C) by the [FontAwesome-Team](https://github.com/FortAwesome) (Published under MIT license, CC BY 4.0 License and SIL OFL 1.1 License)
 
 ## License
 

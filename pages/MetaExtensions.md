@@ -4,7 +4,7 @@ The `<meta>` tag defines metadata about a HTML document. Metadata is data (infor
 
 `<meta>`-tags are always placed in the `<head>`-section of a HTML document and are used to specify metadata about a page, such as the charset (most likely UTF-8), a page description or the pages author. 
 
-Metadata can also be used to verify page-ownership (prominently used by Google as [`google-site-verification`](metatags/google-site-verification)), or to en- or disable certain functions of a browser.
+Metadata can also be used to verify page-ownership (prominently used by Google as [`google-site-verification`](metatags/Google/google-site-verification)), or to en- or disable certain functions of a browser.
 
 Metadata is not displayed on the page itself, and is therefore not intended for the end-user, but is **machine parsable**.
 
@@ -28,7 +28,7 @@ That means that
 <meta name="robots" content="noindex,nofollow">
 <meta name="revisit" content="10 days">
 <meta http-equiv="refresh" content="10">
-<meta http-equiv="refresh" content="5;url=https://faq.jokenetwork.de">
+<meta http-equiv="refresh" content="5;url=https://faq.frontendnet.work">
 
 ````
    

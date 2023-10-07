@@ -1,0 +1,165 @@
+.searchBox {
+  /* Positioning */
+  /* (none) */
+
+  /* Box Model */
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  border-radius: 0.75rem;
+
+  /* Typographic */
+  font-family: Arial, sans-serif;
+
+  /* Visual */
+  background: #fff;
+  display: block;
+
+  /* Misc */
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  &:is(html[class~="dark"] .searchBox) {
+    background: #202124;
+    border: none;
+  }
+
+  &_top {
+    /* Positioning */
+    /* (none) */
+
+    /* Box Model */
+    width: 37.5rem;
+    margin: 0;
+    padding: 0;
+
+    /* Typographic */
+    /* (none) */
+
+    /* Visual */
+    box-shadow: none;
+
+    /* Misc */
+    /* (none) */
+
+    &_title {
+      /* Positioning */
+      /* (none) */
+
+      /* Box Model */
+      /* (none) */
+
+      /* Typographic */
+      font-size: 1.125rem;
+      line-height: 1.2;
+      letter-spacing: normal;
+      white-space: nowrap;
+
+      /* Visual */
+      color: #1a0dab;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      /* Misc */
+      cursor: pointer;
+
+      &:is(html[class~="dark"] .searchBox_top_title) {
+        color: #8ab4f8;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.link {
+  /* Positioning */
+  /* (none) */
+
+  /* Box Model */
+  /* (none) */
+
+  /* Typographic */
+  /* (none) */
+
+  /* Visual */
+  display: block;
+
+  /* Misc */
+  white-space: nowrap;
+}
+
+.url {
+  /* Positioning */
+  position: relative;
+  top: -0.125rem;
+
+  /* Box Model */
+  /* (none) */
+
+  /* Typographic */
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+
+  /* Visual */
+  color: #006621;
+
+  /* Misc */
+  /* (none) */
+
+  &:is(html[class~="dark"] .url) {
+    color: #bdc1c6;
+  }
+}
+
+.chevron {
+  /* Positioning */
+  position: relative;
+  top: 0.5625rem;
+
+  /* Box Model */
+  margin-left: 0.1875rem;
+  border-width: 0.3125rem 0.25rem 0;
+  border-style: solid;
+
+  /* Typographic */
+  /* (none) */
+
+  /* Visual */
+  vertical-align: middle;
+  border-color: #006621 transparent;
+
+  /* Misc */
+  cursor: pointer;
+
+  &:is(html[class~="dark"] .chevron) {
+    border-color: #bdc1c6 transparent;
+  }
+}
+
+.description {
+  /* Positioning */
+  /* (none) */
+
+  /* Box Model */
+  /* (none) */
+
+  /* Typographic */
+  font-size: 0.8125rem;
+  line-height: 1;
+  word-wrap: break-word;
+
+  /* Visual */
+  color: #545454;
+
+  /* Misc */
+  /* (none) */
+
+  &:is(html[class~="dark"] .description) {
+    color: #bdc1c6;
+  }
+}
