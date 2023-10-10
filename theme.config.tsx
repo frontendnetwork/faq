@@ -7,7 +7,6 @@ const config: DocsThemeConfig = {
     <>
       <svg height="30" viewBox="0 0 438 82">
         <g
-          id="ArtBoard2"
           transform="matrix(0.972983,0,0,1,-0.972983,-0.679912)"
         >
           <rect
@@ -15,6 +14,7 @@ const config: DocsThemeConfig = {
             y="0.68"
             width="449.879"
             height="81.429"
+            fill="none"
           />
           <g transform="matrix(1.02777,0,0,1,-41.6466,-11.3038)">
             <g transform="matrix(94,0,0,94,107.424,82.2236)">
