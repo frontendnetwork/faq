@@ -16,6 +16,7 @@ excluded_files:
   - "*.js.map"
   - "*.mk"
   - "package-lock.json"
+  - "bun.lockb"
   - "yarn.lock"
   - "Gemfile.lock"
   - ".typo-ci.yml"

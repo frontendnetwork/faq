@@ -1,0 +1,46 @@
+.Cards {
+  margin-top: 1rem;
+  display: flex;
+  gap: 8px;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Card {
+  width: 32%;
+  @media (max-width: 48rem) {
+    width: 100%;
+  }
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  background: transparent;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &:is(html[class~="light"] .Card) {
+    border: 1px solid #ccc;
+
+    &:hover {
+      background: #eeeeee;
+    }
+  }
+
+  &:hover {
+    background: #171717;
+    border: 1px solid #6e6e6e;
+  }
+}
+
+.Title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-left: 0.35rem;
+
+  &:after {
+    content: " →";
+  }
+}

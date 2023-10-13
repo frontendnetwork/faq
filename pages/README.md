@@ -1,16 +1,3 @@
-<p align="center">
- <img width="100px" src="img/logo.svg" align="center" alt="JokeNetwork FAQ Logo">
- <h1 align="center">FEN MetaTag Documentation</h1>
-</p>
-
-Welcome to FrontEndNetWorks Documentation page 🥳
-
-Here you can find and contribute to the source-code of our documentation-page, which is publicly available at <https://faq.jokenetwork.de>.
-
-## What is this about?
-
-In our documentation anyone can find public **docs for the W3 WHATWG community** ([the MetaExtensions part of WhatWG](https://wiki.whatwg.org/wiki/MetaExtensions)).
-
 ## Contribute
 
 If you want to contribute, fork the Git-Repro ([frontendnetwork/faq](https://github.com/frontendnetwork/faq)) and create a new document under `pages/metatags` named `<title of your page>.md`.
@@ -31,14 +18,13 @@ Please write your changes in [Markdown](https://www.markdownguide.org).
 
 ### Add extensions to the WHATWG Wiki
 
-<img width="100px" src="img/logo_alt.svg" align="center" alt="FrontendNetwork FAQ Logo">
-
 If you want to add your meta-extensions to the WhatWG-Wiki, please register on [WHATWG Wiki](https://wiki.whatwg.org/). To request an account, ask an autoconfirmed user on [Chat](https://whatwg.org/chat). Then go to [Registry `<meta name>`](https://wiki.whatwg.org/wiki/MetaExtensions), edit the page and add your meta tag (in alphabetical order!).
-You can link to https://faq.jokenetwork.de/[your-metaextension] (**Please note that file-names are case-sensitive!**) for the documentation of your meta-tag (Only if you created them before).
+You can link to our site for the documentation of your meta-tag.
 
 ### Add extension to W3 Validator
 
 Just send an e-mail to [www-validator@w3.org](mailto:www-validator@w3.org), informing the W3 about the meta-tag you added to the WHATWG Wiki, their purpose, and state that you added them to the WHATWG Wiki.
+In newer versions of the W3 Validator, this is not necessary anymore.
 
 ## Security
 

@@ -14,17 +14,16 @@
   background: #6c757d !important;
 }
 
-/* Remove the default animation from .gridanimation */
 .gridanimation {
   opacity: 1;
+  transform: translateX(100%);
+  transition: all 1s ease;
 }
 
-/* Start the animation on hover of the <a> tag, only for the first SVG */
 a:hover svg:first-child .gridanimation {
   animation: grid 2s ease alternate infinite;
 }
 
-/* Animation delays */
 a:hover svg:first-child .gridanimation:nth-child(2) {
   animation-delay: 0.1s;
 }
@@ -37,7 +36,6 @@ a:hover svg:first-child .gridanimation:nth-child(6) {
   animation-delay: 0.9s;
 }
 
-/* Animation keyframes */
 @keyframes grid {
   0% {
     opacity: 0;
