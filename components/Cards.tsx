@@ -6,7 +6,7 @@ export default function Cards() {
     <div className={classes.Cards}>
       <div className={classes.Card}>
         {" "}
-        <a href="/metatags/SEO/alternate(lang)">
+        <Link href="metatags/SEO/alternate(lang)">
           <svg width="50" viewBox="0 0 1200 1200">
             <g>
               <path
@@ -20,11 +20,11 @@ export default function Cards() {
             </g>
           </svg>
           <span className={classes.Title}>SEO Metatags</span>
-        </a>
+        </Link>
       </div>
 
       <div className={classes.Card}>
-        <a href="/metatags/Technical/refresh">
+        <Link href="/metatags/Technical/refresh">
           <svg width="50" version="1.1" viewBox="0 0 1200 1200">
             <g>
               <path
@@ -38,7 +38,7 @@ export default function Cards() {
             </g>
           </svg>
           <span className={classes.Title}>Technical Metatags</span>
-        </a>
+        </Link>
       </div>
       <div className={classes.Card}>
         <a href="/metatags/OpenGraph/OG">
@@ -52,7 +52,7 @@ export default function Cards() {
         </a>
       </div>
       <div className={classes.Card}>
-        <a href="/metatags/Apple/apple-itunes-app">
+        <Link href="/metatags/Apple/apple-itunes-app">
           <svg width="50" version="1.1" viewBox="0 0 1200 1200">
             <g>
               <path
@@ -66,10 +66,10 @@ export default function Cards() {
             </g>
           </svg>
           <span className={classes.Title}>Apple Metatags</span>
-        </a>
+        </Link>
       </div>
       <div className={classes.Card}>
-        <a href="/metatags/Google/google-site-verification">
+        <Link href="/metatags/Google/google-site-verification">
           <svg width="50" version="1.1" viewBox="0 0 1200 1200">
             <g>
               <path
@@ -96,10 +96,10 @@ export default function Cards() {
           </svg>
 
           <span className={classes.Title}>Google Metatags</span>
-        </a>
+        </Link>
       </div>
       <div className={classes.Card}>
-        <a href="/metatags/Miscellaneous/abstract">
+        <Link href="/metatags/Miscellaneous/abstract">
           <svg width="50" version="1.1" viewBox="0 0 1200 1200">
             <path
               d="m263.04 878.88c6.1797 29.707 22.402 56.379 45.941 75.523 23.539 19.148 52.957 29.598 83.301 29.598h415.44c30.344 0 59.762-10.449 83.301-29.598 23.539-19.145 39.762-45.816 45.941-75.523l44.398-213.48c1.7734-8.2812 2.6602-16.727 2.6406-25.199-0.011719-38.301-17.73-74.449-48-97.918v-86.281c0-38.191-15.172-74.816-42.176-101.82-27.008-27.004-63.633-42.176-101.82-42.176h-100.08l-67.922-67.922c-18.02-17.996-42.453-28.098-67.922-28.078h-148.08c-38.191 0-74.816 15.172-101.82 42.176-27.004 27.008-42.176 63.633-42.176 101.82v182.28c-30.27 23.469-47.988 59.617-48 97.918-0.011719 8.5117 0.87109 16.996 2.6406 25.32zm624.96-233.04-44.398 213.48c-1.707 8.2109-6.2227 15.57-12.773 20.805-6.5508 5.2383-14.723 8.0234-23.109 7.875h-415.44c-8.2852 0.007812-16.316-2.8398-22.742-8.0664-6.4258-5.2227-10.855-12.504-12.539-20.613l-44.398-213.36c-0.37891-1.8984-0.57812-3.8281-0.60156-5.7617 0-7.4766 2.9727-14.652 8.2578-19.941 5.2891-5.2852 12.465-8.2578 19.941-8.2578h519.6c7.4766 0 14.652 2.9727 19.941 8.2578 5.2852 5.2891 8.2578 12.465 8.2578 19.941 0.18359 1.875 0.18359 3.7656 0 5.6406zm-480-333.84h148.08l67.922 67.922c18.02 17.996 42.453 28.098 67.922 28.078h100.08c12.73 0 24.938 5.0586 33.941 14.059 9 9.0039 14.059 21.211 14.059 33.941v60h-480v-156c0-12.73 5.0586-24.938 14.059-33.941 9.0039-9 21.211-14.059 33.941-14.059z"
@@ -107,7 +107,7 @@ export default function Cards() {
             />
           </svg>
           <span className={classes.Title}>Misc Metatags</span>
-        </a>
+        </Link>
       </div>
     </div>
   );
