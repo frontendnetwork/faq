@@ -1,5 +1,6 @@
 root:
-- '*'
+- changed-files:
+  - any-glob-to-any-file: '*'
 
 source:
 - source/
