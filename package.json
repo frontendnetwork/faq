@@ -13,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://faq.frontendnet.work",
   "dependencies": {
-    "@napi-rs/simple-git": "^0.1.11",
+    "@napi-rs/simple-git": "^0.1.16",
     "million": "latest",
     "next": "^14.0.0",
     "nextra": "latest",
