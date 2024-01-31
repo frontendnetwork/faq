@@ -23,7 +23,7 @@
     "sass": "^1.69.0"
   },
   "devDependencies": {
-    "@types/node": "20.11.10",
+    "@types/node": "20.11.13",
     "typescript": "^5.2.2"
   }
 }
