@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .badge {
   padding: 0.05rem 0.25rem 0.05rem 0.25rem;
   border-radius: 0.25rem;
@@ -41,6 +45,7 @@ a:hover svg:first-child .gridanimation:nth-child(6) {
     opacity: 0;
     transform: translateX(-300%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(100%);
