@@ -9,12 +9,12 @@ export const themeOptionsSchema = z.strictObject({
 });
 
 export default function ThemeSwitch() {
-  const { setTheme } = useTheme();
+  const { setTheme, theme = "light" } = useTheme();
 
   return (
     <button
       type="button"
-      className="inline-flex items-center rounded-full border dark:border-gray-700 p-0.5 max-lg:hidden"
+      className="inline-flex items-center rounded-full border dark:border-gray-700 p-1"
       aria-label="Toggle Theme"
     >
       <svg
@@ -27,8 +27,8 @@ export default function ThemeSwitch() {
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="lucide lucide-sun size-7 rounded-full p-1.5 bg-accent text-[#1e4b9d] dark:text-white/70 bg-[#e3effd] dark:bg-transparent"
-        onClick={() => setTheme("light")}
+        className="lucide lucide-sun size-7 rounded-full p-1.5 bg-accent text-gray-700 dark:text-white/70 bg-[#e5e7eb] dark:bg-transparent"
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         <circle cx={12} cy={12} r={4} />
         <path d="M12 2v2" />
@@ -51,7 +51,7 @@ export default function ThemeSwitch() {
         strokeLinecap="round"
         strokeLinejoin="round"
         className="lucide lucide-moon size-7 rounded-full p-1.5 text-black/70 dark:text-white/80 dark:bg-gray-700"
-        onClick={() => setTheme("dark")}
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
       </svg>
