@@ -2,7 +2,7 @@
 
 Is used to show a short text snippet in search engines. 
 
-Seems not to work anymore, which is why it's marked as <span class="badge bg-secondary">Obsolete</span>.
+Seems not to work anymore, which is why it's marked as <span class="badge bg-danger">Obsolete</span>.
 
 ## Usage
 
