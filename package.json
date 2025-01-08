@@ -15,7 +15,7 @@
   "dependencies": {
     "@napi-rs/simple-git": "^0.1.16",
     "million": "latest",
-    "next": "^14.2.4",
+    "next": "^15.1.4",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
